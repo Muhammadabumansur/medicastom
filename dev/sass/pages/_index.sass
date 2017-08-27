@@ -1,5 +1,7 @@
 .header
     background-color: $main-color
+    position: relative
+    z-index: 1
 
 .header-section
     display: flex
@@ -115,6 +117,71 @@
     background-image: url(../img/hamburger.png)
     background-repeat: no-repeat
     background-position: left center
+
+.main-menu-container
+    position: relative
+
+.mega-menu
+    width: 100%
+    position: absolute
+    top: 61px
+    left: 0
+    right: 0
+    background-color: #fff
+    padding: 30px 45px
+    border: 1px solid #bfd1e2
+    display: block
+    &.closed
+        display: none
+
+.mega-menu__header
+    font-family: 'pt_sansregular'
+    font-size: 14px
+    color: #8d8d8d
+    margin-top: 0
+    margin-bottom: 30px
+    text-transform: uppercase
+    letter-spacing: 1px
+
+.mega-menu__services-list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin: 0
+    padding: 0
+    margin-bottom: -30px
+    & > li
+        width: 20%
+        margin-bottom: 30px
+        &:not(:nth-child(4n))
+            margin-right: 6.66%
+
+.mega-menu__service-header
+    margin-top: 0
+    margin-bottom: 15px
+
+.mega-menu__service-header a
+    font-family: 'bebas_neuebold'
+    font-size: 26px
+    color: $main-color
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+.mega-menu__services-sublist
+    list-style: none
+    margin: 0
+    padding: 0
+    & > li
+        margin-bottom: 3px
+        & a
+            font-family: 'pt_sansregular'
+            font-size: 14px
+            color: #010101
+            text-decoration: none
+            &:hover
+                color: #3f84c5
+                text-decoration: underline
 
 .main-header
     margin: 0
