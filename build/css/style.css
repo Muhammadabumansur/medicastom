@@ -1814,3 +1814,133 @@ body {
   background-repeat: no-repeat;
   background-position: 95% center;
   background-position: right 8px center; }
+
+.doctors-block {
+  border-top: 1px solid #ced3e2;
+  padding-bottom: 30px; }
+
+.doctors-clinic-switcher {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .doctors-clinic-switcher span {
+    font-family: 'pt_sansregular';
+    color: #111;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 30px; }
+
+.doctors-clinic-switcher input[type="radio"] {
+  display: none; }
+
+.doctors-clinic-switcher input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  font-family: 'bebas_neueregular';
+  color: #111;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  margin-right: 20px;
+  vertical-align: middle; }
+
+.doctors-clinic-switcher input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 6px solid #fff;
+  -webkit-box-shadow: 0 0 0 1px #3668a1;
+          box-shadow: 0 0 0 1px #3668a1;
+  margin-right: 17px; }
+
+.doctors-clinic-switcher input[type="radio"]:checked + label:before {
+  background-color: #3668a1; }
+
+.doctors-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .doctors-list > li {
+    width: 33%;
+    margin-bottom: 10px; }
+    .doctors-list > li:not(:nth-child(3n)) {
+      margin-right: 0.5%; }
+
+.doctors-img-wrap {
+  overflow: hidden;
+  height: 280px; }
+  .doctors-img-wrap img {
+    width: 100%;
+    height: auto; }
+
+.doctors-clinics {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e0e0e0; }
+
+.doctors-clinics span {
+  padding: 5px 10px;
+  color: #fff;
+  font-family: 'pt_sansregular';
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg); }
+
+.doctors-clinics span:nth-child(1) {
+  background-color: #3668a1;
+  margin-right: 10px; }
+
+.doctors-clinics span:nth-child(2) {
+  background-color: #14234d; }
+
+.doctors-details {
+  padding: 25px 40px;
+  background-color: #f4f4f4; }
+
+.doctors-name {
+  font-family: 'bebas_neuebold';
+  color: #2e437e;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 17px; }
+
+.doctors-skills {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .doctors-skills > li {
+    margin-bottom: 5px;
+    font-family: 'pt_sansitalic';
+    font-size: 16px;
+    line-height: 1.4;
+    color: #383838; }
