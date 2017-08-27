@@ -58,6 +58,7 @@ gulp.task("serve", function() {
 
   gulp.watch("dev/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("dev/*.html", ["html:update"]);
+  gulp.watch(["dev/img/**","dev/js/**"], ["copy"]);
 })
 
 gulp.task("build", function(fn) {
@@ -69,6 +70,7 @@ gulp.task("copy", function() {
     "dev/fonts/**/*.{woff,woff2}",
     "dev/img/**",
     "dev/js/**",
+    "dev/vendor-css/**",
     "dev/*.html"
   ], {
     base: "dev"

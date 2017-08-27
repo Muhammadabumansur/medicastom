@@ -1,13 +1,531 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendor-css/flickity.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>МедикаСтом. Стоматологические клиники</title>
 </head>
 <body>
-    
+    <header class="header">
+        <section class="header-section container">
+            <div class="main-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="schedule-info">
+                Работаем без перерывов и выходных
+            </div>
+            <ul class="short-contacts">
+                <li>
+                    <a href="tel:+74991659410" class="short-contact__phone">8 499 465 94 10</a>
+                    <div class="short-contact__metro">ст.м. Первомайская</div>
+                </li>
+                <li>
+                    <a href="tel:+74957118036" class="short-contact__phone">8 495 711 80 36</a>
+                    <div class="short-contact__metro">ст.м. Бульвар Дмитрия Донского</div>
+                </li>
+            </ul>
+            <div class="btn-wrap">
+                <button class="appointment-button" type="button">Запись на прием</button>
+            </div>
+        </section>
+        <nav class="main-menu">
+            <div class="container">
+                <ul class="main-menu-list">
+                    <li>
+                        <a class="main-menu__link main-menu__link_submenu-opener" href="">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">О нас</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Наши врачи</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Цены</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Рассрочка</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Статьи</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Акции</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-header">Круглосуточная стоматология 24 часа в Восточном и Южном округах Москвы</h1>
+        <section class="main-slider">
+            <div class="main-slider__slide">
+                <div class="slide-info">
+                    <h2 class="slide-info__header">Лидеры в имплантологии</h2>
+                    <p class="slide-info__text">Системы дентальных имплантатов, устанавливаемые в стоматоолгических клиниках «МедикаСтом», изготовлены компаниями-производителями, которые являются признанными мировыми лидерами в области дентальной имплантации</p>
+                    <a href="#" class="appointment-button" type="button">Узнать больше</a>
+                </div>
+            </div>
+            <div class="main-slider__slide">
+                <div class="slide-info">
+                    <h2 class="slide-info__header">Лидеры в имплантологии</h2>
+                    <p class="slide-info__text">Системы дентальных имплантатов, устанавливаемые в стоматоолгических клиниках «МедикаСтом», изготовлены компаниями-производителями, которые являются признанными мировыми лидерами в области дентальной имплантации</p>
+                    <a href="#" class="appointment-button" type="button">Узнать больше</a>
+                </div>
+            </div>
+            <div class="main-slider__slide">
+                <div class="slide-info">
+                    <h2 class="slide-info__header">Лидеры в имплантологии</h2>
+                    <p class="slide-info__text">Системы дентальных имплантатов, устанавливаемые в стоматоолгических клиниках «МедикаСтом», изготовлены компаниями-производителями, которые являются признанными мировыми лидерами в области дентальной имплантации</p>
+                    <a href="#" class="appointment-button" type="button">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="offers">
+            <div class="container offers-block">
+                <div class="offers__info">
+                    <div class="offers__choice">
+                        <input type="radio" name="clinic" id="butovo" checked>
+                        <label for="butovo">Клиника в Бутово</label>
+                        <input type="radio" name="clinic" id="pervomay">
+                        <label for="pervomay">Клиника на Первомайской</label>
+                    </div>
+                    <h2 class="offers__header">Лучшие предложения</h2>
+                    <p class="offers__text">Специальные цены на услуги - безупречное качество по приятным ценам</p>
+                </div>
+                <div class="offers-slider-block">
+                    <div class="offers-slider">
+                        <div class="offers-slide">
+                            <div class="offers-slide-inner">
+                                <img src="../img/offers-slide-image-1.jpg" alt="">
+                                <div class="offer-deadline">
+                                    <div class="offer-deadline__pre-text">До конца акции</div>
+                                    <div class="offer-deadline__time">10:22:15</div>
+                                    <div class="offer-deadline__post-text">
+                                        <span>дней</span>
+                                        <span>часа</span>
+                                        <span>мин.</span>
+                                    </div>
+                                </div>
+                                <h3 class="offer-name">Профессиональное отбеливание AMAZING WHITE</h3>
+                                <div class="offer-coast">10 000 руб.</div>
+                            </div>
+                        </div>
+                        <div class="offers-slide">
+                            <div class="offers-slide-inner">
+                                <img src="../img/offers-slide-image-2.jpg" alt="">
+                                <div class="offer-deadline">
+                                    <div class="offer-deadline__pre-text">До конца акции</div>
+                                    <div class="offer-deadline__time">10:22:15</div>
+                                    <div class="offer-deadline__post-text">
+                                        <span>дней</span>
+                                        <span>часа</span>
+                                        <span>мин.</span>
+                                    </div>
+                                </div>
+                                <h3 class="offer-name">Керамическая коронка на импланте</h3>
+                                <div class="offer-coast">22 000 руб.</div>
+                            </div>
+                        </div>
+                        <div class="offers-slide">
+                            <div class="offers-slide-inner">
+                                <img src="../img/offers-slide-image-3.jpg" alt="">
+                                <div class="offer-deadline">
+                                    <div class="offer-deadline__pre-text">До конца акции</div>
+                                    <div class="offer-deadline__time">10:22:15</div>
+                                    <div class="offer-deadline__post-text">
+                                        <span>дней</span>
+                                        <span>часа</span>
+                                        <span>мин.</span>
+                                    </div>
+                                </div>
+                                <h3 class="offer-name">При записи на консультацию рентген одного зуба</h3>
+                                <div class="offer-coast">Бесплатно</div>
+                            </div>
+                        </div>
+                        <div class="offers-slide">
+                            <div class="offers-slide-inner">
+                                <img src="../img/offers-slide-image-2.jpg" alt="">
+                                <div class="offer-deadline">
+                                    <div class="offer-deadline__pre-text">До конца акции</div>
+                                    <div class="offer-deadline__time">10:22:15</div>
+                                    <div class="offer-deadline__post-text">
+                                        <span>дней</span>
+                                        <span>часа</span>
+                                        <span>мин.</span>
+                                    </div>
+                                </div>
+                                <h3 class="offer-name">При записи на консультацию рентген одного зуба</h3>
+                                <div class="offer-coast">Бесплатно</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <ul class="services__list">
+                    <li class="services__list-item services__list-item_first">
+                        <div class="service-border">
+                            <h2 class="services__header">Наши услуги</h2>
+                            <p class="services__promo-text">В нашей стоматологической клинике Вам всегда рады!</p>
+                        </div>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-1.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Болит зуб или выпала пломба?</div>
+                        <h3 class="services__solution">Терапевтическая стоматология</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Лечение кариеса</li>
+                            <li class="services__details-item">Лечение пульпита зуба</li>
+                            <li class="services__details-item">Лечение периодонтита</li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-2.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Сломался зуб или коронка?</div>
+                        <h3 class="services__solution">Протезирование зубов</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Несъемное протезирование</li>
+                            <li class="services__details-item">Съемное протезирование</li>
+                            <li class="services__details-item">Ультраниры</li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-3.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Запустили зубы?</div>
+                        <h3 class="services__solution">Хирургическая стоматология</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Пародонтология</li>
+                            <li class="services__details-item">Зубосохраняющие операции</li>
+                            <li class="services__details-item">Удаление зубов</li>
+                            <li class="services__details-item">Лазерная стоматология</li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-4.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Утратили зуб?</div>
+                        <h3 class="services__solution">Имплантация зубов</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Одноэтапная имплантация</li>
+                            <li class="services__details-item">Классическая имплантация</li>
+                            <li class="services__details-item">Костная пластика</li>
+                            <li class="services__details-item">
+                                <a class="show-all-link" href="">Показать все</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-5.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Неровные зубы?</div>
+                        <h3 class="services__solution">Исправление прикуса</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Брекет системы</li>
+                            <li class="services__details-item">Ортодонтические пластинки</li>
+                            <li class="services__details-item">Лечение на капах</li>
+                            <li class="services__details-item">Ретейнеры</li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-6.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Нужен снимок зуба?</div>
+                        <h3 class="services__solution">Цифровая диагностика</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Ортопантомограмма</li>
+                            <li class="services__details-item">Визиография</li>
+                            <li class="services__details-item">Интраоральная камера</li>
+                        </ul>
+                    </li>
+                    <li class="services__list-item">
+                        <div class="services__img-wrap">
+                            <img src="img/services-7.jpg" alt="">
+                        </div>
+                        <div class="services__problem">Пожелтели зубы?</div>
+                        <h3 class="services__solution">Гигиена</h3>
+                        <ul class="services__details">
+                            <li class="services__details-item">Профессиональная гигиена полости рта</li>
+                            <li class="services__details-item">Отбеливание зубов</li>
+                            <li class="services__details-item">Индивидуальные средства гигиены для домашнего использования</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="promo-block">
+                <img class="clock-img" src="img/watches.png" alt="">
+                <div class="clock-round">
+                    <div class="clock-round__hours-number">24</div>
+                    <div class="clock-round__right-block">
+                        <div class="clock-round__hours">часа</div>
+                        <span class="clock-round__promo-text clock-round__promo-text_top">Мы работаем</span>
+                        <br>
+                        <span class="clock-round__promo-text clock-round__promo-text_bottom">для вас</span>
+                    </div>
+                </div>
+                <div class="promo-block__right-block">
+                    <p class="promo-block__text">Больше не нужно выкраивать время на стоматолога</p>
+                    <button class="appointment-button" type="button">Запишитесь на прием сейчас</button>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container advantages-block">
+                <div class="advantages__info">
+                    <div class="advantages__header">
+                        <div class="advantages__number">3</div>
+                        <div class="advantages__right-block">
+                            <div class="advantages__reasons">веских причины</div>
+                            <span class="advantages__promo-text advantages__promo-text_top">Почему с нами</span>
+                            <br>
+                            <span class="advantages__promo-text">удобно</span>
+                        </div>
+                    </div>
+                    <p class="advantages__text">Найти время для лечения зубов очень непросто. Практически каждая стоматологическая клиника в Москве работает в те часы, когда жители столицы работают.</p>
+                    <p class="advantages__text">Мы предоставляем свои услуги <span>круглосуточно!</span></p>
+                </div>
+                <div class="advantages-slider">
+                    <div class="advantages-slide">
+                        <img src="img/advantages-slide-image-1.jpg" alt="" class="advantages-slide__img">
+                        <h3 class="advantages-slide__header">Получить помощь вы сможете в любое время</h3>
+                        <div class="advantages-slide__text">Мы знаем, что нередко зубы начинают болеть ночью</div>
+                    </div>
+                    <div class="advantages-slide">
+                        <img src="img/advantages-slide-image-1.jpg" alt="" class="advantages-slide__img">
+                        <h3 class="advantages-slide__header">Получить помощь вы сможете в любое время</h3>
+                        <div class="advantages-slide__text">Мы знаем, что нередко зубы начинают болеть ночью</div>
+                    </div>
+                    <div class="advantages-slide">
+                        <img src="img/advantages-slide-image-1.jpg" alt="" class="advantages-slide__img">
+                        <h3 class="advantages-slide__header">Получить помощь вы сможете в любое время</h3>
+                        <div class="advantages-slide__text">Мы знаем, что нередко зубы начинают болеть ночью</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container feedback-block">
+                <a href="" class="feedback__show-all-link">Все отзывы</a>
+                <h2 class="feedback__header">Пациенты о нас</h2>
+                <div class="feedback-slider">
+                    <div class="feedback-slide">
+                        <div class="feedback-slide__wrapper">
+                            <p class="feedback__text">Евгений Матвеевич - очень внимательный доктор. Консультация очень подробная, анализы назначены соответствующие.</p>
+                            <div class="feedback__author">Ольга Геннадиевна</div>
+                            <div class="feedback__date">12.04.2017</div>
+                        </div>
+                    </div>
+                    <div class="feedback-slide">
+                        <div class="feedback-slide__wrapper">
+                            <p class="feedback__text">Большое спасибо хочу сказать всему коллективу клиники и особенно врачу, Игорю Николаевичу.</p>
+                            <div class="feedback__author">Любовь Корнеевна</div>
+                            <div class="feedback__date">12.04.2017</div>
+                        </div>
+                    </div>
+                    <div class="feedback-slide">
+                        <div class="feedback-slide__wrapper">
+                            <p class="feedback__text">Хочу поблагодарить весь обслуживающий персонал и врачей за их отношение к пациентам, за их прекрасную работу.</p>
+                            <div class="feedback__author">Ольга Геннадиевна</div>
+                            <div class="feedback__date">12.04.2017</div>
+                        </div>
+                    </div>
+                    <div class="feedback-slide">
+                        <div class="feedback-slide__wrapper">
+                            <p class="feedback__text">Большое спасибо хочу сказать всему коллективу клиники и особенно врачу, Игорю Николаевичу.</p>
+                            <div class="feedback__author">Любовь Корнеевна</div>
+                            <div class="feedback__date">12.04.2017</div>
+                        </div>
+                    </div>
+                    <div class="feedback-slide">
+                        <div class="feedback-slide__wrapper">
+                            <p class="feedback__text">Большое спасибо хочу сказать всему коллективу клиники и особенно врачу, Игорю Николаевичу.</p>
+                            <div class="feedback__author">Любовь Корнеевна</div>
+                            <div class="feedback__date">12.04.2017</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="feedback__sub-header">Наши довольные клиенты в <a href="">instagram</a></h3>
+            <div class="clients-slider">
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-1.jpg" alt="">
+                </div>
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-2.jpg" alt="">
+                </div>
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-3.jpg" alt="">
+                </div>
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-4.jpg" alt="">
+                </div>
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-1.jpg" alt="">
+                </div>
+                <div class="feedback-clients-slide">
+                    <img src="img/clients-img-2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="appointment-form-block">
+            <div class="container appointment-block">
+                <div class="appointment-form-block__info">
+                    <div class="promo-header">
+                        <div class="promo-header__large-text">Запишитесь на прием -</div>
+                        <div class="promo-header__additional-text">Мы ждем вас даже ночью</div>
+                    </div>
+                    <div class="doctors-slider">
+                        <div class="doctors-slide">
+                            <div class="doctors-slide__img-wrap">
+                                <img src="img/doctor-img-1.jpg" alt="">
+                            </div>
+                            <div class="doctor-promo-text">
+                                    Доброе утро для нас это когда наши пациенты улыбаются
+                            </div>
+                            <div class="doctor-name">Беляева Ольга Александровна</div>
+                            <div class="doctor-position">Врач-стоматолог терапевт</div>
+                        </div>
+                        <div class="doctors-slide">
+                            <div class="doctors-slide__img-wrap">
+                                <img src="img/doctor-img-1.jpg" alt="">
+                            </div>
+                            <div class="doctor-promo-text">
+                                    Доброе утро для нас это когда наши пациенты улыбаются
+                            </div>
+                            <div class="doctor-name">Беляева Ольга Александровна</div>
+                            <div class="doctor-position">Врач-стоматолог терапевт</div>
+                        </div>
+                        <div class="doctors-slide">
+                            <div class="doctors-slide__img-wrap">
+                                <img src="img/doctor-img-1.jpg" alt="">
+                            </div>
+                            <div class="doctor-promo-text">
+                                    Доброе утро для нас это когда наши пациенты улыбаются
+                            </div>
+                            <div class="doctor-name">Беляева Ольга Александровна</div>
+                            <div class="doctor-position">Врач-стоматолог терапевт</div>
+                        </div>
+                        <div class="doctors-slide">
+                            <div class="doctors-slide__img-wrap">
+                                <img src="img/doctor-img-1.jpg" alt="">
+                            </div>
+                            <div class="doctor-promo-text">
+                                    Доброе утро для нас это когда наши пациенты улыбаются
+                            </div>
+                            <div class="doctor-name">Беляева Ольга Александровна</div>
+                            <div class="doctor-position">Врач-стоматолог терапевт</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointment-form">
+                    <form action="">
+                        <p class="form-block form-block-justify">
+                            <label for="name" class="visually-hidden">Введите имя</label> 
+                            <input class="name-input" type="text" id="name" placeholder="Ваше имя">
+                            <label for="phone" class="visually-hidden">Введите номер телефона</label> 
+                            <input class="phone-input" type="text" id="phone" placeholder="+7">
+                        </p>
+                        <p class="form-block form-block-justify">
+                            <label for="service">Выберите услугу:</label> 
+                            <select class="service-select" name="service" id="service">
+                                <option disabled selected hidden value="">Выберите услугу</option>
+                                <option value="">ЙЙЙЙЙЙЙЙЙЙЙ</option>
+                                <option value="">КККККККК</option>
+                                <option value="">ЬЬЬЬЬЬЬЬЬЬЬ</option>
+                            </select>
+                        </p>
+                        <p class="form-block form-block-justify">
+                            <label for="district">Выберите Ваш район:</label> 
+                            <select class="district-select" name="district" id="district">
+                                <option disabled selected hidden value="">Выберите район</option>
+                                <option value="">Измайлово</option>
+                                <option value="">ФФФФФФФФФ</option>
+                                <option value="">ЯЯЯЯЯЯЯЯЯЯ</option>
+                            </select>
+                        </p>
+                        <p class="form-block">
+                            <input class="accept-checkbox" type="checkbox" name="accept" id="accept">
+                            <label class="accept-label" for="accept">Даю согласие на обработку <a href="">Персональных данных</a></label>
+                        </p>
+                        <button class="appointment-button form-appointment-button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="promo-text">
+            <div class="container container-narrow">
+                <h2 class="promo-text__header">Лучшие методики протезирования и имплантации зубов</h2>
+                <p>Восстановите зуб или целый зубной ряд! Наша круглосуточная клиника позволит сделать это даже ночью.</p>
+                <p>Стоматология "Медикастом" осуществляет протезирование и имплантацию в режиме 24/7. Врачи клиник располагают огромным опытом. Они могут провести восстановление зубов даже в самых сложных случаях. Одними из первых в столице мы стали применять технологию имплантации.</p>
+                <p>К уникальным методикам клиники относят применение имплантов "Байкон" (США). Такие импланты позволяют проводить имплантацию даже в тех ситуациях, когда она невозможна с применением других систем.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer-section">
+                <div class="main-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="" class="footer-menu__link">О нас</a></li>
+                    <li><a href="" class="footer-menu__link">Рассрочка</a></li>
+                    <li><a href="" class="footer-menu__link">Статьи</a></li>
+                    <li><a href="" class="footer-menu__link">Акции</a></li>
+                    <li><a href="" class="footer-menu__link">Отзывы</a></li>
+                    <li><a href="" class="footer-menu__link">Цены</a></li>
+                    <li><a href="" class="footer-menu__link">Наши врачи</a></li>
+                    <li><a href="" class="footer-menu__link">Услуги</a></li>
+                </ul>
+                <ul class="short-contacts footer-short-contacts">
+                    <li>
+                        <a href="tel:+74991659410" class="short-contact__phone">8 499 465 94 10</a>
+                        <div class="short-contact__metro">ст.м. Первомайская</div>
+                    </li>
+                    <li>
+                        <a href="tel:+74957118036" class="short-contact__phone">8 495 711 80 36</a>
+                        <div class="short-contact__metro">ст.м. Бульвар Дмитрия Донского</div>
+                    </li>
+                </ul>
+                <div class="btn-wrap">
+                    <button class="appointment-button" type="button">Запись на прием</button>
+                </div>
+            </section>
+        </div>
+        <section class="footer-bottom">
+            <div class="container footer-bottom-block">
+                <div class="copyright">&copy; 2017 Стоматология МедикаСтом Лицензия № 21-00-003325</div>
+                <a href="" class="footer__personal">Соглашение об обработке персональных данных</a>
+                <ul class="footer__social">
+                    <li><a href="" class="footer__social-link"><img src="img/fb.png" alt=""></a></li>
+                    <li><a href="" class="footer__social-link"><img src="img/tw.png" alt=""></a></li>
+                    <li><a href="" class="footer__social-link"><img src="img/vk.png" alt=""></a></li>
+                    <li><a href="" class="footer__social-link"><img src="img/ig.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
