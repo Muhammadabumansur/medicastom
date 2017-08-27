@@ -91,6 +91,20 @@ if (doctorsSlider) {
     });
 }
 
+var photosSlider = document.querySelector('.photos-slider');
+if (photosSlider) {
+    var photosSliderFlkty = new Flickity( photosSlider, {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      autoPlay: true,
+      groupCells: 1,
+      prevNextButtons: false,
+      pageDots: false
+    });
+}
+
 var megaMenu = document.getElementById('megaMenu');
 var megaMenuOpener = document.getElementById('megaMenuOpener');
 var openMegaMenu = function(e) {
