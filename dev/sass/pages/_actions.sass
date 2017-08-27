@@ -1,0 +1,218 @@
+.breadcrumbs
+    display: flex
+    margin: 0
+    padding: 0
+    padding-top: 20px
+    margin-bottom: 20px
+    list-style: none
+    & li
+        font-family: 'pt_sansitalic'
+        font-size: 16px
+        color: $main-color
+        &:not(:last-child)
+            padding-right: 5px
+            &:after
+                content: '»'
+                margin-left: 5px
+
+.common-header
+    font-family: 'bebas_neuebold'
+    font-size: 60px
+    color: $main-color
+    margin-top: 0
+    margin-bottom: 25px
+
+.common-block
+    border-top: 1px solid #ced3e2
+    display: flex
+    justify-content: space-between
+
+.main-block
+    width: 66%
+    padding-top: 40px
+    padding-bottom: 40px
+
+.actions-list
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    & > li
+        width: 49%
+        margin-bottom: 10px
+        border: 1px solid #e8e8e8
+        background-color: #f4f4f4
+
+.actions-img-block
+    position: relative
+    height: 220px
+    overflow: hidden
+    & img
+        width: 100%
+        height: auto
+
+.action-days
+    position: absolute
+    top: 0
+    left: 40px
+    padding: 5px 10px
+    font-family: 'bebas_neueregular'
+    font-size: 13px
+    color: #383838
+    border: 1px solid #e8e8e8
+    background-color: #fff
+
+.actions-info
+    padding: 30px 45px
+
+.actions-name
+    margin-top: 0
+    margin-bottom: 20px
+    font-family: 'bebas_neuebold'
+    color: #000011
+    font-size: 30px
+    line-height: 1.2
+    text-transform: uppercase
+
+.action-coast
+    display: inline-block
+    padding: 5px 10px
+    background-color: #6782cd
+    font-family: 'bebas_neuebold'
+    color: #fff
+    text-transform: uppercase
+
+.pagination-block
+    border-top: 1px solid #ced3e2
+    border-bottom: 1px solid #ced3e2
+    padding-top: 15px
+    padding-bottom: 15px
+
+.page-numbers
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: center
+    align-items: center
+
+.page-numbers a
+    display: block
+    font-family: 'bebas_neuebold'
+    color: $main-color
+    font-size: 20px
+    height: 45px
+    line-height: 45px
+    width: 45px
+    border-radius: 50%
+    margin-left: 5px
+    margin-right: 5px
+    text-decoration: none
+    text-align: center
+ 
+.page-numbers li.current a
+    color: #fff
+    background-color: $main-color
+
+.page-numbers .prev a
+    background-image: url(../img/pag-prev.png)
+    display: block
+    width: 8px
+    height: 11px
+
+.page-numbers .next a
+    background-image: url(../img/pag-next.png)
+    display: block
+    width: 8px
+    height: 11px
+
+.aside-block
+    width: 33%
+
+.clinic-switcher
+    padding: 40px 50px
+    background-color: #f4f4f4
+    margin-bottom: 50px
+    & h3
+        font-family: 'pt_sansregular'
+        color: #737373
+        font-size: 16px
+        text-transform: uppercase
+        margin-top: 0
+
+.clinic-switcher input[type="radio"]
+    display: none
+
+.clinic-switcher input[type="radio"] + label
+    display: block
+    position: relative
+    padding-left: 35px
+    font-family: 'bebas_neueregular'
+    color: #111
+    font-size: 24px
+    line-height: 26px
+    letter-spacing: 2px
+
+.clinic-switcher input[type="radio"] + label:before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 3px
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #fff
+    border: 6px solid #fff
+    box-shadow: 0 0 0 1px #3668a1
+    margin-right: 17px
+
+.clinic-switcher input[type="radio"]:checked + label:before
+    background-color: #3668a1
+
+.aside-container
+    padding-left: 50px
+    padding-right: 50px
+
+.aside-header
+    font-family: 'bebas_neuebold'
+    color: #000011
+    font-size: 31px
+    margin-top: 0
+    margin-bottom: 30px
+
+.news-block
+    padding: 25px 40px
+    background-color: #f4f4f4
+    margin-bottom: 10px
+    & h4
+        font-family: 'bebas_neuebold'
+        color: #111
+        font-size: 22px
+        line-height: 26px
+        margin-top: 0
+        margin-bottom: 10px
+
+.news-block .date
+    display: inline-block
+    padding: 5px 10px
+    background-color: #6782cd
+    color: #fff
+    font-family: 'bebas_neuebold'
+    letter-spacing: 2px
+
+.all-news
+    display: inline-block
+    margin-top: 10px
+    font-family: 'pt_sansregular'
+    color: $main-color
+    font-size: 14px
+    text-transform: uppercase
+    margin-bottom: 70px
+
+.button-sub-text
+    margin-top: 20px
+    font-family: 'pt_sansitalic'
+    color: #79797a
+    font-size: 14px
+    line-height: 1.3
