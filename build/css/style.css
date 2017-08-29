@@ -2160,3 +2160,77 @@ body {
   color: #2e437e;
   font-size: 16px;
   line-height: 1.5; }
+
+.feedback-form-block {
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0 10px 5px #f1f1f1;
+          box-shadow: 0 10px 5px #f1f1f1; }
+
+.feedback-form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -120px; }
+
+.feedback-form-section form {
+  background-color: transparent; }
+
+.feedback-form-section form .accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.feedback-main {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.feedback-main__header {
+  font-family: 'bebas_neuebold';
+  color: #000;
+  font-size: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .feedback-main__header span {
+    display: inline-block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #6782cd;
+    margin-left: 10px; }
+
+.feedback-main .feedback-slide {
+  position: relative; }
+
+.feedback-main .feedback-slide:before {
+  top: 40px; }
+
+.feedback-main .feedback-slide__wrapper {
+  border: none;
+  background-color: #f9f9fa;
+  width: auto;
+  height: auto;
+  border-bottom: 2px solid #2e437e; }
+
+.feedbacks-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px; }
+
+.feedbacks-left {
+  width: 50%; }
+
+.feedbacks-right {
+  width: 50%; }
