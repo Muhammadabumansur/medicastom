@@ -1,0 +1,131 @@
+.services-price
+    display: flex
+    align-items: flex-start
+    padding-top: 35px
+    padding-bottom: 35px
+    border-top: 1px solid #ced3e2
+    border-bottom: 1px solid #ced3e2
+    & > img
+        margin-right: 20px
+
+.services-price table
+    width: 90%
+    table-layout: fixed
+
+.services-price th
+    text-align: left
+    padding-top: 20px
+    padding-bottom: 10px
+    font-family: 'bebas_neuebold'
+    font-size: 26px
+    color: $main-color
+    text-transform: uppercase
+
+.services-price td
+    padding-top: 10px
+    padding-bottom: 10px
+    color: #010101
+
+.services-price td:first-child
+    font-family: 'pt_sansregular'
+    font-size: 16px
+
+.services-price td:last-child
+    text-align: right
+    font-family: 'bebas_neuebold'
+    font-size: 20px
+
+.services-price td:last-child.free
+    color: $main-color
+
+.services-price tr:not(:last-child) td
+    border-bottom: 1px solid #eef0f5
+
+.services-kinds
+    padding-top: 35px
+    padding-bottom: 40px
+    border-bottom: 1px solid #ced3e2
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.services-kinds-list
+    display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    width: 75%
+    & > li
+        width: 32%
+        padding: 15px 20px
+        background-color: #f4f4f4
+        display: flex
+        align-items: center
+
+.services-kinds-img-wrap
+    border: 10px solid #fff
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 20px
+
+.services-kinds-name
+    width: 40%
+    margin-top: 0
+    margin-bottom: 0
+
+.services-kinds-name a
+    font-family: 'bebas_neuebold'
+    font-size: 22px
+    line-height: 1.2
+    color: $main-color
+    text-transform: uppercase
+
+.services-kinds-text
+    width: 20%
+    font-family: 'pt_sansitalic'
+    font-size: 14px
+    line-height: 1.5
+    color: #4b609c
+
+.service-category-details
+    padding-top: 50px
+    padding-bottom: 70px
+    display: flex
+    justify-content: space-between
+
+.service-category-details-main
+    width: 72%
+    & h2
+        font-family: 'bebas_neuebold'
+        color: #001
+        font-size: 31px
+        text-transform: uppercase
+        margin-top: 0
+        margin-bottom: 30px
+    & > p
+        font-family: 'pt_sansregular'
+        font-size: 18px
+        line-height: 1.67
+        color: #383838
+        margin-top: 0
+        margin-bottom: 35px
+        & b
+            font-family: 'pt_sansbold'
+    & h4
+        font-family: 'pt_sansbold'
+        font-size: 18px
+        line-height: 1.67
+        color: #383838
+        margin-top: 0
+        margin-bottom: 35px
+    & .list p
+        margin-bottom: 30px
+
+.service-category-details-side
+    width: 25%
+
+.service-category-details-side .services__list-item
+    width: auto
+    border: 1px solid #ced3e2
+    & .appointment-button
+        font-size: 13px
