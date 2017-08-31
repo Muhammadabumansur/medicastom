@@ -105,11 +105,8 @@ if (photosSlider) {
     });
 }
 
-var megaMenu = document.getElementById('megaMenu');
-var megaMenuOpener = document.getElementById('megaMenuOpener');
-var openMegaMenu = function(e) {
-    e.preventDefault();
-    megaMenu.classList.toggle('closed');
-}
+$('.services-price h2 button').click(function(){
+    $(this).toggleClass('closed');
+    $(this).parents('.services-price').find('.price-table').slideToggle()
+})
 
-megaMenuOpener.addEventListener('click', openMegaMenu)

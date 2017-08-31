@@ -2818,3 +2818,55 @@ body {
 
 .service-category-details-main .services-price {
   margin-bottom: 60px; }
+
+.main-price-section {
+  margin-bottom: 60px; }
+
+.price-accordion {
+  margin: 0;
+  padding: 0; }
+  .price-accordion table {
+    width: 100%; }
+
+.price-accordion .services-price {
+  display: block;
+  padding-left: 100px; }
+
+.price-accordion .services-price table {
+  table-layout: auto; }
+
+.services-price h2 {
+  position: relative; }
+
+.services-price h2 img {
+  position: absolute;
+  right: 101%;
+  top: -10px; }
+
+.services-price h2 button {
+  font-family: 'bebas_neuebold';
+  font-size: 26px;
+  color: #2e437e;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none; }
+  .services-price h2 button:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 8px;
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    background-image: url(../img/accordion-arrow.png);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.services-price h2 button.closed:after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg); }
