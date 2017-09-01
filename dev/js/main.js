@@ -110,3 +110,8 @@ $('.services-price h2 button').click(function(){
     $(this).parents('.services-price').find('.price-table').slideToggle()
 })
 
+$('#mainMenuOpener').click(function(e){
+    e.preventDefault();
+    $('.main-menu-list').slideToggle();
+})
+

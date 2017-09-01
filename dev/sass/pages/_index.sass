@@ -10,8 +10,32 @@
     padding-top: 20px
     padding-bottom: 20px
 
+@media (max-width: 790px)
+    .header-section
+        flex-wrap: wrap
+
+@media (max-width: 490px)
+    .header-section
+        justify-content: center
+
 .main-logo
     margin-right: 11%
+
+@media (max-width: 1240px)
+    .main-logo
+        margin-right: 5%
+        & img
+            width: 90%
+
+@media (max-width: 940px)
+    .main-logo
+        margin-right: 2%
+
+@media (max-width: 490px)
+    .main-logo
+        margin-right: 0
+        margin-bottom: 20px
+        text-align: center
 
 .schedule-info
     width: 130px
@@ -26,6 +50,14 @@
     line-height: 1
     font-style: italic
 
+@media (max-width: 1240px)
+    .schedule-info
+        margin-right: 3%
+
+@media (max-width: 940px)
+    .schedule-info
+        display: none
+
 .short-contacts
     display: flex
     margin-right: auto
@@ -36,12 +68,33 @@
         &:not(:last-child)
             margin-right: 12%
 
+@media (max-width: 790px)
+    .short-contacts
+        flex-direction: column
+
+@media (max-width: 490px)
+    .short-contacts
+        text-align: center
+        margin-bottom: 20px
+
+@media (max-width: 1240px)
+    .short-contacts li:not(:last-child)
+        margin-right: 8%
+
+@media (max-width: 490px)
+    .short-contacts li:not(:last-child)
+        margin-right: 0
+
 .short-contact__phone
     font-family: 'bebas_neuebold'
     font-size: 30px
     color: #fff
     text-decoration: none
     white-space: nowrap
+
+@media (max-width: 1240px)
+    .short-contact__phone
+        font-size: 25px
 
 .short-contact__metro  
     font-family: 'pt_sansregular'
@@ -59,6 +112,10 @@
 .btn-wrap
     margin-left: auto
 
+@media (max-width: 790px)
+    .btn-wrap
+        margin-left: 0
+
 .appointment-button
     height: 47px
     line-height: 47px
@@ -75,16 +132,25 @@
     box-shadow: 0 3px 0 0 #cf9c30
     text-decoration: none
     cursor: pointer
+    white-space: nowrap
+
+@media (max-width: 1240px)
+    .appointment-button
+        padding-left: 20px
+        padding-right: 20px
 
 .main-menu
     background-color: #f1f1f1
     background-image: linear-gradient(#f7f7f7, #dad9d9)
 
+@media (max-width: 790px)
+    .main-menu   
+
 .main-menu-list
     margin: 0
     padding: 0
     display: flex
-    & li
+    & > li
         list-style: none
         flex: 1
         position: relative
@@ -96,6 +162,20 @@
             top: 0
             right: 0
             background-color: #d7e2ed 
+
+@media (max-width: 790px)
+    .main-menu-list
+        flex-direction: column
+        background-color: #f1f1f1
+        display: none
+
+.main-menu-list li.main-menu__list-item-submenu-opener
+    flex-grow: 0
+    flex-basis: 30px
+
+@media (max-width: 790px)
+    .main-menu-list li.main-menu__list-item-submenu-opener
+        display: none   
 
 .main-menu__link
     display: flex
@@ -113,16 +193,43 @@
     white-space: nowrap
 
 .main-menu__link_submenu-opener
-    padding-left: 30px
+    padding: 20px
     background-image: url(../img/hamburger.png)
     background-repeat: no-repeat
     background-position: left center
 
+@media (max-width: 1240px)
+    .main-menu__link
+        padding: 20px
+        font-size: 14px
+
+@media (max-width: 940px)
+    .main-menu__link
+        padding: 10px
+        font-size: 13px
+
 .main-menu-container
     position: relative
 
+@media (max-width: 790px)
+    .main-menu-container
+        height: 35px
+        max-width: 100%
+
+.mainMenuOpener
+    display: none
+    background-image: url(../img/hamburger.png)
+    background-repeat: no-repeat
+    height: 100%
+    background-position: left center
+
+@media (max-width: 790px)
+    .mainMenuOpener
+        display: block
+        margin-left: 20px
+
 .mega-menu
-    width: 100%
+    width: 86vw
     position: absolute
     top: 61px
     left: 0
@@ -130,9 +237,12 @@
     background-color: #fff
     padding: 30px 45px
     border: 1px solid #bfd1e2
+    display: none
+    &:hover
+        display: block
+    
+.main-menu__link_submenu-opener:hover + .mega-menu
     display: block
-    &.closed
-        display: none
 
 .mega-menu__header
     font-family: 'pt_sansregular'
@@ -194,6 +304,14 @@
     font-size: 24px
     letter-spacing: 3px
 
+@media (max-width: 940px)
+    .main-header
+        font-size: 20px
+
+@media (max-width: 490px)
+    .main-slider
+        display: none
+
 .main-slider__slide
     height: 566px
     width: 100%
@@ -210,6 +328,10 @@
     flex-direction: column
     justify-content: center
     align-items: flex-start
+
+@media (max-width: 940px)
+    .slide-info
+        width: 50%
 
 .slide-info__header
     font-family: 'bebas_neuebold'
@@ -228,6 +350,10 @@
     line-height: 1.5
     color: $main-color
 
+@media (max-width: 940px)
+    .slide-info__text
+        line-height: 1.2
+
 .main-slider .flickity-prev-next-button
     visibility: hidden
 
@@ -240,12 +366,26 @@
     padding-top: 70px
     padding-bottom: 70px
 
+@media (max-width: 790px)
+    .offers
+        padding-top: 30px
+        padding-bottom: 30px
+
 .offers-block
     display: flex
     justify-content: space-between
 
+@media (max-width: 790px)
+    .offers-block
+        flex-direction: column
+
 .offers__info
     width: 27%
+
+@media (max-width: 790px)
+    .offers__info
+        width: 100%
+        margin-bottom: 20px
 
 .offers__choice
     display: flex
@@ -277,6 +417,15 @@
     margin-bottom: 25px
     color: $main-color
 
+@media (max-width: 1240px)
+    .offers__header
+        font-size: 50px
+
+@media (max-width: 940px)
+    .offers__header
+        font-size: 40px
+        margin-bottom: 15px
+
 .offers__text
     margin-top: 0
     margin-bottom: 15px
@@ -287,16 +436,30 @@
     color: $main-color
     padding-right: 25%
 
+@media (max-width: 940px)
+    .offers__text
+        line-height: 1.2
+
 .offers-slider-block
     width: 73%
     overflow: hidden
     padding-left: 60px
     padding-right: 60px
 
+@media (max-width: 790px)
+    .offers-slider-block
+        width: 100%
+        padding-left: 40px
+        padding-right: 40px
+
 .offers-slide
     width: 238px
     padding-left: 8px
     padding-right: 8px
+
+@media (max-width: 790px)
+    .offers-slide
+        width: 190px
 
 .offers-slide-inner
     position: relative
@@ -306,7 +469,6 @@
 .offers-slide-inner img
     position: absolute
     z-index: -1
-
 
 .offers-slider .flickity-prev-next-button
     visibility: hidden
@@ -331,6 +493,10 @@
     font-family: 'bebas_neuebold'
     margin-bottom: 45px
 
+@media (max-width: 790px)
+    .offer-name
+        margin-bottom: 30px
+
 .offer-deadline__pre-text
     font-size: 13px
 
@@ -352,6 +518,10 @@
     text-decoration: underline
     margin-bottom: 20px
 
+@media (max-width: 940px)
+    .offer-name
+        font-size: 20px
+
 .offer-coast
     position: absolute
     left: 20px
@@ -369,6 +539,11 @@
     padding-bottom: 125px
     position: relative
 
+@media (max-width: 490px)
+    .services
+        padding-bottom: 50px
+
+
 .services__list
     margin: 0
     padding: 0
@@ -384,16 +559,32 @@
     margin-bottom: 30px
     border-bottom: 3px solid $main-color
 
+@media (max-width: 940px)
+    .services__list-item
+        padding: 15px
+
+@media (max-width: 790px)
+    .services__list-item
+        width: 49%
+
+@media (max-width: 490px)
+    .services__list-item
+        width: 100%
+
 .services__list-item_first
     border-bottom: none
     position: relative
 
+@media (max-width: 490px)
+    .services__list-item_first
+        height: 280px
+
 .service-border
     position: absolute
-    width: 190px
-    height: 240px
-    top: 33px
-    left: 77px
+    width: 66%
+    height: 68%
+    top: 9%
+    left: 27%
     border: 3px solid #6782cd
     padding-top: 25px
 
@@ -408,6 +599,14 @@
     margin-left: -35px
     background-color: #f7f7f8
 
+@media (max-width: 1240px)
+    .services__header
+        font-size: 50px
+
+@media (max-width: 940px)
+    .services__header
+        font-size: 40px
+
 .services__promo-text
     margin: 0
     padding-top: 10px
@@ -419,6 +618,10 @@
     line-height: 1.5
     margin-left: -35px
     background-color: #f7f7f8
+
+@media (max-width: 1240px)
+    .services__promo-text
+        line-height: 1.2
 
 .services__img-wrap
     height: 78px
@@ -439,6 +642,10 @@
     color: $main-color
     margin-bottom: 15px
 
+@media (max-width: 940px)
+    .services__solution
+        font-size: 23px
+
 .services__details
     margin: 0
     padding: 0
@@ -451,6 +658,10 @@
     &:not(:last-child)
         margin-bottom: 10px
 
+@media (max-width: 940px)
+    .services__details-item:not(:last-child)
+        margin-bottom: 5px
+
 .promo-block
     width: 83%
     padding: 10px 80px 10px 280px
@@ -462,14 +673,48 @@
     bottom: -70px
     transform: translateX(-50%)
 
+@media (max-width: 1240px)
+    .promo-block
+        padding-left: 190px
+
+@media (max-width: 940px)
+    .promo-block
+        padding-right: 50px
+        padding-left: 100px
+
+@media (max-width: 790px)
+    .promo-block
+        padding: 25px
+        width: 90%
+
+@media (max-width: 490px)
+    .promo-block
+        display: none
+
 .clock-img
     position: absolute
     left: 80px
     bottom: -40px
 
+@media (max-width: 1240px)
+    .clock-img
+        left: 40px
+
+@media (max-width: 940px)
+    .clock-img
+        width: 200px
+
+@media (max-width: 790px)
+    .clock-img
+        width: 170px
+
 .clock-round
     display: flex
     position: relative
+
+@media (max-width: 790px)
+    .clock-round
+        flex-direction: column
 
 .clock-round__hours-number
     font-family: 'bebas_neuebold'
@@ -477,9 +722,20 @@
     color: #fff
     margin-right: 15px
 
+@media (max-width: 790px)
+    .clock-round__hours-number
+        font-size: 70px
+        line-height: 1
+        margin-right: 0
+
 .clock-round__right-block
     padding-top: 10px
     width: 100px
+
+@media (max-width: 790px)
+    .clock-round__right-block
+        padding-top: 0
+        margin-top: -20px
 
 .clock-round__hours
     font-family: 'playfair_displaybold_italic'
@@ -515,6 +771,10 @@
     flex-basis: 40%
     margin-left: auto
 
+@media (max-width: 1240px)
+    .promo-block__right-block
+        flex-basis: 50%
+
 .promo-block__text
     font-family: 'playfair_displayitalic'
     font-size: 18px
@@ -525,17 +785,37 @@
     padding-top: 160px
     padding-bottom: 50px
 
-.advantages__info
-    width: 27%
+@media (max-width: 790px)
+    .advantages
+        padding-top: 120px
+
+@media (max-width: 490px)
+    .advantages
+        padding-top: 50px
 
 .advantages-block
     display: flex
     justify-content: space-between
 
+@media (max-width: 790px)
+    .advantages-block
+        flex-direction: column
+
+.advantages__info
+    width: 27%
+
+@media (max-width: 790px)
+    .advantages__info
+        width: 100%
+        
 .advantages__header
     display: flex
     margin-left: -40px
     width: 200px
+
+@media (max-width: 1240px)
+    .advantages__header
+        margin-left: -10px
 
 .advantages__number
     font-family: 'bebas_neuebold'
@@ -543,6 +823,10 @@
     line-height: 1
     color: $main-color
     margin-right: 15px
+
+@media (max-width: 1240px)
+    .advantages__number
+        font-size: 150px
 
 .advantages__reasons
     font-family: 'playfair_displaybold_italic'
@@ -553,6 +837,16 @@
     margin-bottom: 7px
     position: relative
     z-index: 1
+
+@media (max-width: 1240px)
+    .advantages__reasons
+        font-size: 50px
+        line-height: 38px
+
+@media (max-width: 940px)
+    .advantages__reasons
+        font-size: 40px
+        line-height: 33px
 
 .advantages__promo-text
     display: inline-block
@@ -590,8 +884,13 @@
 
 .advantages-slider
     width: 63%
+    background-color: #262e43
     box-shadow: 0 13px 0 -10px #babfcc, 0 20px 0 -13px #d0d4dd
 
+@media (max-width: 790px)
+    .advantages-slider
+        width: 100%
+     
 .advantages-slide
     position: relative
     width: 100%
@@ -611,6 +910,15 @@
     font-size: 40px
     color: #fff
 
+@media (max-width: 790px)
+    .advantages-slide__header
+        font-size: 25px
+        bottom: 170px
+
+@media (max-width: 490px)
+    .advantages-slide__header
+        bottom: 90px
+
 .advantages-slide__text
     position: absolute
     bottom: 75px
@@ -620,8 +928,21 @@
     width: 100%
     text-align: center
 
+@media (max-width: 790px)
+    .advantages-slide__text
+        bottom: 130px
+        font-size: 14px
+
+@media (max-width: 490px)
+    .advantages-slide__text
+        bottom: 50px
+
 .advantages-slider .flickity-page-dots
     bottom: 25px
+
+@media (max-width: 790px)
+    .advantages-slider .flickity-page-dots
+        bottom: 10px
 
 .advantages-slider .flickity-page-dots .dot
     width: 6px
@@ -640,12 +961,20 @@
     top: auto
     bottom: -15px
 
+@media (max-width: 790px)
+    .advantages-slider .flickity-prev-next-button
+        bottom: -30px
+
 .advantages-slider .flickity-prev-next-button svg
     visibility: visible
 
 .feedback
     padding-top: 10px
     padding-bottom: 50px
+
+@media (max-width: 790px)
+    .feedback
+        padding-bottom: 10px
 
 .feedback-block
     position: relative
@@ -659,6 +988,14 @@
     font-size: 18px
     color: $main-color
 
+@media (max-width: 790px)
+    .feedback__show-all-link
+        font-size: 14px
+
+@media (max-width: 490px)
+    .feedback__show-all-link
+        top: -25px
+
 .feedback__header
     font-family: 'bebas_neuebold'
     font-size: 48px
@@ -666,6 +1003,11 @@
     margin-bottom: 40px
     color: $main-color
     text-align: center
+
+@media (max-width: 790px)
+    .feedback__header
+        font-size: 30px
+        margin-bottom: 20px
 
 .feedback-slide
     padding-top: 20px
@@ -678,6 +1020,16 @@
     border: 4px solid #efefef
     width: 370px
     height: 210px
+
+@media (max-width: 940px)
+    .feedback-slide__wrapper
+        width: 340px
+        padding: 20px 30px
+
+@media (max-width: 490px)
+    .feedback-slide__wrapper
+        width: 280px
+        height: 250px
 
 .feedback-slide:before
     content: ''
@@ -740,13 +1092,27 @@
     padding-top: 90px
     padding-bottom: 90px
 
+@media (max-width: 940px)
+    .appointment-form-block
+        padding-top: 30px
+        padding-bottom: 30px
+
 .appointment-block
     display: flex
     justify-content: space-between
     align-items: flex-start
 
+@media (max-width: 790px)
+    .appointment-block
+        flex-direction: column
+
 .appointment-form-block__info
     width: 40%
+
+@media (max-width: 790px)
+    .appointment-form-block__info
+        width: 100%
+        margin-bottom: 40px
 
 .promo-header
     background-image: url(../img/notebook.png)
@@ -756,12 +1122,26 @@
     padding-bottom: 60px
     margin-bottom: 10px
 
+@media (max-width: 940px)
+    .promo-header
+        padding-right: 30px
+        padding-left: 30px
+
 .promo-header__large-text
     font-family: 'playfair_displaybold_italic'
     font-size: 60px
     line-height: 48px
     color: $main-color
     margin-bottom: 20px
+
+@media (max-width: 1240px)
+    .promo-header__large-text
+        font-size: 50px
+
+@media (max-width: 940px)
+    .promo-header__large-text
+        font-size: 40px
+        line-height: 38px
 
 .promo-header__additional-text
     font-family: 'bebas_neuebold'
@@ -804,6 +1184,11 @@
         border-width: 8px 10px
         transform: skewX(-10deg)
 
+@media (max-width: 1240px)
+    .doctor-promo-text
+        padding: 15px 20px
+        font-size: 15px
+
 .doctor-name
     font-family: 'bebas_neuebold'
     font-size: 18px
@@ -814,6 +1199,10 @@
     top: 120px
     right: 40px
 
+@media (max-width: 940px)
+    .doctor-name
+        right: 0
+
 .doctor-position
     font-family: 'pt_sansitalic'
     font-size: 16px
@@ -823,6 +1212,10 @@
     position: absolute
     top: 170px
     right: 40px
+
+@media (max-width: 940px)
+    .doctor-position
+        right: 0
 
 .doctors-slider .flickity-page-dots
     bottom: -15px
@@ -843,9 +1236,17 @@
 .appointment-form
     width: 58%
 
+@media (max-width: 790px)
+    .appointment-form
+        width: 100%
+
 .appointment-form form
     padding: 50px 40px 40px
     background-color: $main-color
+
+@media (max-width: 1240px)
+    .appointment-form form
+        padding: 30px
 
 .form-block
     display: flex
@@ -854,12 +1255,21 @@
 .form-block-justify
     justify-content: space-between
 
+@media (max-width: 490px)
+    .form-block-justify
+        flex-direction: column
+
 .name-input
     width: 49%
     border: none
     height: 58px
     padding-left: 20px
     padding-right: 20px
+
+@media (max-width: 490px)
+    .name-input
+        width: 100%
+        margin-bottom: 20px
 
 .name-input::placeholder
     font-family: 'pt_sansitalic'
@@ -877,6 +1287,10 @@
     padding-left: 20px
     padding-right: 20px
 
+@media (max-width: 490px)
+    .phone-input
+        width: 100%
+
 .phone-input::placeholder
     font-family: 'pt_sansitalic'
     color: #707070
@@ -890,6 +1304,10 @@
     font-family: 'pt_sansitalic'
     color: #fff
     font-size: 16px
+
+@media (max-width: 940px)
+    .appointment-form label
+        font-size: 15px
 
 .service-select
     appearance: none
@@ -906,6 +1324,15 @@
     color: #707070
     font-size: 16px
 
+@media (max-width: 1240px)
+    .service-select
+        width: 60%
+
+@media (max-width: 490px)
+    .service-select
+        margin-top: 10px
+        width: 100%
+
 .district-select
     appearance: none
     background-image: url(../img/select-arrow.png)
@@ -920,6 +1347,15 @@
     font-family: 'pt_sansitalic'
     color: #707070
     font-size: 16px
+
+@media (max-width: 1240px)
+    .district-select
+        width: 60%
+
+@media (max-width: 490px)
+    .district-select
+        margin-top: 10px
+        width: 100%
 
 .accept-checkbox
     width: 20px
@@ -936,9 +1372,18 @@
     margin-left: auto
     margin-right: auto
 
+@media (max-width: 490px)
+    .form-appointment-button
+        padding-left: 50px
+        padding-right: 50px
+
 .promo-text
     padding-top: 20px
     padding-bottom: 70px
+
+@media (max-width: 790px)
+    .promo-text
+        padding-bottom: 20px
 
 .promo-text__header
     font-family: 'bebas_neuebold'
@@ -966,6 +1411,11 @@
     padding-top: 33px
     padding-bottom: 33px
 
+@media (max-width: 790px)
+    .footer-section
+        flex-wrap: wrap
+        justify-content: space-around
+
 .footer-menu
     list-style: none
     margin: 0
@@ -980,6 +1430,24 @@
     & li:not(:nth-child(4n))
         margin-bottom: 10px
 
+@media (max-width: 940px)
+    .footer-menu
+        width: 27%
+        margin-right: 5%
+
+@media (max-width: 790px)
+    .footer-menu
+        width: 40%
+        margin-right: 0
+
+@media (max-width: 490px)
+    .footer-menu
+        width: 60%
+
+@media (max-width: 940px)
+    .footer-menu li:not(:nth-child(4n))
+        margin-bottom: 5px
+
 .footer-menu li a
     font-family: 'pt_sansbold'
     font-size: 14px
@@ -989,6 +1457,10 @@
 
 .footer-short-contacts
     flex-direction: column
+
+@media (max-width: 790px)
+    .footer .btn-wrap
+        align-self: flex-end
 
 .footer-bottom
     background-color: #081330
@@ -1000,15 +1472,39 @@
     align-items: center
     justify-content: space-between
 
+@media (max-width: 490px)
+    .footer-bottom-block
+        flex-direction: column
+
 .copyright
     font-family: 'pt_sansitalic'
     color: #667290
     font-size: 14px
 
+@media (max-width: 790px)
+    .copyright
+        width: 30%
+        font-size: 12px
+
+@media (max-width: 490px)
+    .copyright
+        width: 100%
+        margin-bottom: 10px
+
 .footer__personal
     font-family: 'pt_sansitalic'
     color: #fff
     font-size: 14px
+
+@media (max-width: 790px)
+    .footer__personal
+        width: 30%
+        font-size: 12px
+
+@media (max-width: 490px)
+    .footer__personal
+        width: 100%
+        margin-bottom: 10px
 
 .footer__social
     display: flex
@@ -1017,3 +1513,11 @@
     padding: 0
     & li:not(:last-child)
         margin-right: 25px
+
+
+@media (max-width: 490px)
+    .footer__social
+        padding-bottom: 20px
+        padding-top: 10px
+
+        
