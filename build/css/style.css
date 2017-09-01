@@ -1873,13 +1873,26 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+@media (max-width: 790px) {
+  .common-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .main-block {
   width: 66%;
   padding-top: 40px;
   padding-bottom: 40px; }
 
+@media (max-width: 790px) {
+  .main-block {
+    width: 100%; } }
+
 .actions-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1893,6 +1906,10 @@ body {
     margin-bottom: 10px;
     border: 1px solid #e8e8e8;
     background-color: #f4f4f4; }
+
+@media (max-width: 490px) {
+  .actions-list > li {
+    width: 100%; } }
 
 .actions-img-block {
   position: relative;
@@ -1916,6 +1933,10 @@ body {
 .actions-info {
   padding: 30px 45px; }
 
+@media (max-width: 490px) {
+  .actions-info {
+    padding: 10px 15px; } }
+
 .actions-name {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1925,13 +1946,29 @@ body {
   line-height: 1.2;
   text-transform: uppercase; }
 
+@media (max-width: 490px) {
+  .actions-name {
+    font-size: 22px;
+    line-height: 1; } }
+
 .action-coast {
   display: inline-block;
   padding: 5px 10px;
   background-color: #6782cd;
   font-family: 'bebas_neuebold';
-  color: #fff;
+  font-size: 22px;
   text-transform: uppercase; }
+  .action-coast a {
+    color: #fff;
+    text-decoration: none; }
+
+@media (max-width: 790px) {
+  .action-coast {
+    font-size: 18px; } }
+
+@media (max-width: 490px) {
+  .action-coast {
+    font-size: 15px; } }
 
 .pagination-block {
   border-top: 1px solid #ced3e2;
@@ -1967,6 +2004,13 @@ body {
   text-decoration: none;
   text-align: center; }
 
+@media (max-width: 490px) {
+  .page-numbers a {
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    width: 25px; } }
+
 .page-numbers li.current a {
   color: #fff;
   background-color: #2e437e; }
@@ -1986,6 +2030,10 @@ body {
 .aside-block {
   width: 33%; }
 
+@media (max-width: 790px) {
+  .aside-block {
+    width: 100%; } }
+
 .clinic-switcher {
   padding: 40px 50px;
   background-color: #f4f4f4;
@@ -1996,6 +2044,10 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 0; }
+
+@media (max-width: 790px) {
+  .clinic-switcher {
+    padding: 30px 40px; } }
 
 .clinic-switcher input[type="radio"] {
   display: none; }
@@ -2032,6 +2084,11 @@ body {
   padding-left: 50px;
   padding-right: 50px; }
 
+@media (max-width: 940px) {
+  .aside-container {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
 .aside-header {
   font-family: 'bebas_neuebold';
   color: #000011;
@@ -2067,6 +2124,10 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 70px; }
+
+@media (max-width: 490px) {
+  .all-news {
+    margin-bottom: 30px; } }
 
 .button-sub-text {
   margin-top: 20px;
