@@ -115,3 +115,14 @@ $('#mainMenuOpener').click(function(e){
     $('.main-menu-list').slideToggle();
 })
 
+var clinicSwitcher = document.querySelector('.clinic-switcher-wide');
+if (clinicSwitcher) {
+    clinicSwitcher.addEventListener('change', function(e) {
+        var radios = this.querySelectorAll("input[type='radio']");
+        radios.forEach(function(radio) {
+            var currentMap = document.querySelector("[data-map=" + radio.id + "]");
+            currentMap.style.display = radio.checked ?  "block" : "none"
+        });
+    })
+}
+
