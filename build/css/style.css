@@ -2782,6 +2782,10 @@ body {
   border-top: 1px solid #e0e0e0;
   padding-top: 60px; }
 
+@media (max-width: 790px) {
+  .about-us-block {
+    padding-top: 30px; } }
+
 .about-us-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2793,8 +2797,19 @@ body {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+@media (max-width: 940px) {
+  .about-us-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .about-us-info {
   width: 44%; }
+
+@media (max-width: 940px) {
+  .about-us-info {
+    width: 100%; } }
 
 .about-us-header {
   font-family: 'bebas_neuebold';
@@ -2827,6 +2842,21 @@ body {
   display: flex; }
   .about-us-clinics-photos li:not(:last-child) {
     margin-right: 45px; }
+
+@media (max-width: 940px) {
+  .about-us-clinics-photos {
+    width: 100%; } }
+
+@media (max-width: 490px) {
+  .about-us-clinics-photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 490px) {
+  .about-us-clinics-photos li:not(:last-child) {
+    margin-right: 0; } }
 
 .clinic-photo-img-block {
   height: 105px;
@@ -2886,10 +2916,18 @@ body {
   background-position: 95% center;
   background-position: right 10px center; }
 
+@media (max-width: 940px) {
+  .equipement-img {
+    display: none; } }
+
 .about-us-complex-info {
   width: 62%;
   padding-top: 90px;
   padding-bottom: 60px; }
+
+@media (max-width: 940px) {
+  .about-us-complex-info {
+    width: 100%; } }
 
 .intro-text {
   font-family: 'pt_sansregular';
@@ -2914,6 +2952,14 @@ body {
   .principes-list > li {
     width: 44%;
     margin-bottom: 30px; }
+
+@media (max-width: 940px) {
+  .principes-list {
+    margin-left: 60px; } }
+
+@media (max-width: 790px) {
+  .principes-list > li {
+    width: 90%; } }
 
 .principes-list h3 {
   font-family: 'bebas_neuebold';
