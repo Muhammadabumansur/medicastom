@@ -4,11 +4,24 @@
     padding-bottom: 35px
     display: flex
 
+@media (max-width: 790px)
+    .credit-promo
+        flex-direction: column
+
 .credit-promo-img
     width: 67%
     position: relative
     background-image: url(../img/credit-img.jpg)
     background-size: cover
+
+@media (max-width: 790px)
+    .credit-promo-img
+        width: 100%
+        height: 220px
+
+@media (max-width: 790px)
+    .credit-promo-img
+        background-position: center
 
 .credit-logo
     width: 220px
@@ -22,11 +35,24 @@
     top: 30px
     left: 30px
 
+@media (max-width: 490px)
+    .credit-logo
+        width: 150px
+        height: 50px
+        top: 15px
+        left: 15px
+        & img
+            width: 120px
 
 .credit-promo-info
     width: 33%
     padding: 50px
     background-color: $main-color
+
+@media (max-width: 790px)
+    .credit-promo-info
+        width: 100%
+        padding: 30px
 
 .credit-promo-slogan
     font-family: 'bebas_neuebold'
@@ -61,6 +87,17 @@
         flex-direction: column
         align-items: center
 
+@media (max-width: 940px)    
+    .credit-features
+        flex-wrap: wrap
+        & > li
+            width: 49%
+            margin-bottom: 20px
+
+@media (max-width: 490px) 
+    .credit-features > li
+        width: 100%
+
 .credit-features__icon
     margin-bottom: 30px
 
@@ -92,6 +129,16 @@
     border-bottom: 1px solid #ced3e2
     & > div
         width: 43%
+
+@media (max-width: 940px) 
+    .credit-conditions
+        justify-content: space-around
+
+@media (max-width: 490px) 
+    .credit-conditions
+        flex-direction: column
+        & > div
+            width: 100%
 
 .credit-conditions h2
     font-family: 'bebas_neuebold'

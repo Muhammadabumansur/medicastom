@@ -3017,14 +3017,14 @@ body {
     padding-right: 0; } }
 
 @media (max-width: 490px) {
-  .feedback-form-section form p {
+  .feedback-form form p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .feedback-form-section form p input[type="text"] {
+    .feedback-form form p input[type="text"] {
       width: 100%; }
-      .feedback-form-section form p input[type="text"]:first-of-type {
+      .feedback-form form p input[type="text"]:first-of-type {
         margin-bottom: 1em; } }
 
 @media (max-width: 940px) {
@@ -3110,11 +3110,27 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+@media (max-width: 790px) {
+  .credit-promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .credit-promo-img {
   width: 67%;
   position: relative;
   background-image: url(../img/credit-img.jpg);
   background-size: cover; }
+
+@media (max-width: 790px) {
+  .credit-promo-img {
+    width: 100%;
+    height: 220px; } }
+
+@media (max-width: 790px) {
+  .credit-promo-img {
+    background-position: center; } }
 
 .credit-logo {
   width: 220px;
@@ -3134,10 +3150,24 @@ body {
   top: 30px;
   left: 30px; }
 
+@media (max-width: 490px) {
+  .credit-logo {
+    width: 150px;
+    height: 50px;
+    top: 15px;
+    left: 15px; }
+    .credit-logo img {
+      width: 120px; } }
+
 .credit-promo-info {
   width: 33%;
   padding: 50px;
   background-color: #2e437e; }
+
+@media (max-width: 790px) {
+  .credit-promo-info {
+    width: 100%;
+    padding: 30px; } }
 
 .credit-promo-slogan {
   font-family: 'bebas_neuebold';
@@ -3183,6 +3213,18 @@ body {
         -ms-flex-align: center;
             align-items: center; }
 
+@media (max-width: 940px) {
+  .credit-features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .credit-features > li {
+      width: 49%;
+      margin-bottom: 20px; } }
+
+@media (max-width: 490px) {
+  .credit-features > li {
+    width: 100%; } }
+
 .credit-features__icon {
   margin-bottom: 30px; }
 
@@ -3218,6 +3260,20 @@ body {
   border-bottom: 1px solid #ced3e2; }
   .credit-conditions > div {
     width: 43%; }
+
+@media (max-width: 940px) {
+  .credit-conditions {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (max-width: 490px) {
+  .credit-conditions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .credit-conditions > div {
+      width: 100%; } }
 
 .credit-conditions h2 {
   font-family: 'bebas_neuebold';
