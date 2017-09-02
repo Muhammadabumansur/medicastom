@@ -5,6 +5,10 @@
 .article-main-info
     width: 72%
 
+@media (max-width: 790px)
+    .article-main-info
+        width: 100%
+
 .article-img-wrap
     overflow: hidden
     margin-bottom: 40px
@@ -49,11 +53,20 @@
 .article-side-info
     width: 24%
 
+@media (max-width: 790px)
+    .article-side-info
+        width: 100%
+
 .other-article
     padding: 15px 10px
     background-color: #f4f4f4
     display: flex
     margin-bottom: 10px
+
+@media (max-width: 1240px)
+    .other-article
+        flex-direction: column
+        align-items: center
 
 .other-article-img-wrap
     width: 95px
@@ -75,6 +88,10 @@
     margin: 0
     padding-top: 15px
     width: 40%
+
+@media (max-width: 1240px)
+    .other-article p
+        width: 100%
 
 .look-all
     font-family: 'pt_sansregular'
