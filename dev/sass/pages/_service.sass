@@ -4,15 +4,40 @@
 .service-caries-photos
     display: flex
     justify-content: space-between
+    overflow: hidden
     & img
-        flex: 1
+        width: 50%
+
+@media (max-width: 490px)
+    .service-caries-photos
+        flex-wrap: wrap
+        & img
+            width: 100%
 
 .other-article p a
     color: $main-color
+
+@media (max-width: 1240px)
+    .service-category-details-main
+        width: 67%
+
+@media (max-width: 790px)
+    .service-category-details-main
+        width: 100%
 
 .service-category-details-main table
     table-layout: auto
 
 .service-category-details-main .services-price
     margin-bottom: 60px
+
+@media (max-width: 1240px)
+    .service-category-details-side
+        width: 30%
+
+@media (max-width: 790px)
+    .service-category-details-side
+        width: 100%
+
+
 
