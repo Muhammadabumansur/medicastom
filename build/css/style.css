@@ -2755,12 +2755,18 @@ input[type="text"], textarea {
 
 .doctors-name {
   font-family: 'bebas_neuebold';
-  color: #2e437e;
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 17px; }
+  .doctors-name a {
+    color: #2e437e;
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .doctors-name a:hover, .doctors-name a:focus {
+      color: #4666bf; }
 
 .doctors-skills {
   list-style: none;

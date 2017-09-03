@@ -139,12 +139,18 @@
 
 .doctors-name
     font-family: 'bebas_neuebold'
-    color: $main-color
     font-size: 24px
     line-height: 1.25
     text-transform: uppercase
     margin-top: 0
     margin-bottom: 17px
+    & a
+        color: $main-color
+        text-decoration: none
+        transition: color 0.3s
+        &:hover, &:focus
+            color: $main-color-hover
+
 
 .doctors-skills
     list-style: none
