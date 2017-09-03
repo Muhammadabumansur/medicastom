@@ -103,14 +103,17 @@
 
 .action-coast
     display: inline-block
-    padding: 5px 10px
-    background-color: #6782cd
     font-family: 'bebas_neuebold'
     font-size: 22px
     text-transform: uppercase
     & a
         color: #fff
+        padding: 5px 10px
         text-decoration: none
+        background-color: #6782cd
+        transition: background-color 0.3s
+        &:hover, &:focus
+            background-color: #4b5e94
 
 @media (max-width: 790px)
     .action-coast
@@ -147,6 +150,9 @@
     margin-right: 5px
     text-decoration: none
     text-align: center
+    transition: color 0.3s
+    &:hover, &:focus
+        color: #3c8cab
  
 @media (max-width: 490px)
     .page-numbers a
@@ -253,11 +259,16 @@
 
 .news-block .date
     display: inline-block
-    padding: 5px 10px
-    background-color: #6782cd
-    color: #fff
     font-family: 'bebas_neuebold'
     letter-spacing: 2px
+    & a
+        color: #fff
+        text-decoration: none
+        padding: 5px 10px
+        background-color: #6782cd
+        transition: background-color 0.3s
+        &:hover, &:focus
+            background-color: #4b5e94
 
 .all-news
     display: inline-block
@@ -267,6 +278,10 @@
     font-size: 14px
     text-transform: uppercase
     margin-bottom: 70px
+    transition: color 0.3s
+    &:hover, &:focus
+        color: $main-color-hover
+        text-decoration: none
 
 @media (max-width: 490px)
     .all-news
