@@ -15,6 +15,9 @@
                 content: '»'
                 margin-left: 5px
 
+.breadcrumbs a:visited
+    color: inherit
+
 .common-header
     font-family: 'bebas_neuebold'
     font-size: 60px
@@ -95,6 +98,11 @@
     font-size: 30px
     line-height: 1.2
     text-transform: uppercase
+    & a
+        color: #000011
+        text-decoration: none
+        &:hover
+            text-decoration: underline
 
 @media (max-width: 490px)
     .actions-name
@@ -106,14 +114,9 @@
     font-family: 'bebas_neuebold'
     font-size: 22px
     text-transform: uppercase
-    & a
-        color: #fff
-        padding: 5px 10px
-        text-decoration: none
-        background-color: #6782cd
-        transition: background-color 0.3s
-        &:hover, &:focus
-            background-color: #4b5e94
+    color: #fff
+    padding: 5px 10px
+    background-color: #6782cd
 
 @media (max-width: 790px)
     .action-coast
@@ -142,9 +145,9 @@
     font-family: 'bebas_neuebold'
     color: $main-color
     font-size: 20px
-    height: 45px
-    line-height: 45px
-    width: 45px
+    height: 42px
+    line-height: 42px
+    width: 42px
     border-radius: 50%
     margin-left: 5px
     margin-right: 5px
@@ -251,24 +254,24 @@
     margin-bottom: 10px
     & h4
         font-family: 'bebas_neuebold'
-        color: #111
         font-size: 22px
         line-height: 26px
         margin-top: 0
         margin-bottom: 10px
+        & a
+            color: #111
+            text-decoration: none
+            &:hover, &:focus
+                text-decoration: underline
+
 
 .news-block .date
     display: inline-block
     font-family: 'bebas_neuebold'
     letter-spacing: 2px
-    & a
-        color: #fff
-        text-decoration: none
-        padding: 5px 10px
-        background-color: #6782cd
-        transition: background-color 0.3s
-        &:hover, &:focus
-            background-color: #4b5e94
+    color: #fff
+    padding: 5px 10px
+    background-color: #6782cd
 
 .all-news
     display: inline-block

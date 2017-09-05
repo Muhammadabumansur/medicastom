@@ -29,7 +29,15 @@
         width: 100%
 
 .service-category-details-main table
-    table-layout: auto
+    table-layout: fixed
+
+@media (max-width: 1240px)
+    .service-category-details-main table
+        width: 80%
+
+@media (max-width: 490px)
+    .service-category-details-main table
+        width: 90%
 
 .service-category-details-main .services-price
     margin-bottom: 60px
@@ -42,5 +50,11 @@
     .service-category-details-side
         width: 100%
 
-
-
+.service-category-details-side .other-article
+    display: flex
+    align-items: center
+    background-color: #f4f4f4
+    padding: 18px 20px
+    & p
+        padding-top: 0
+        width: 60%

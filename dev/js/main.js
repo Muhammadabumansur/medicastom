@@ -27,10 +27,10 @@ if (offersSlider) {
       pageDots: false,
       groupCells: true,
       arrowShape: { 
-        x0: 25,
-        x1: 70, y1: 50,
-        x2: 75, y2: 50,
-        x3: 30
+        x0: 10,
+        x1: 60, y1: 50,
+        x2: 62, y2: 50,
+        x3: 12
       }
     });
 }
@@ -119,7 +119,7 @@ var clinicSwitcher = document.querySelector('.clinic-switcher-wide');
 if (clinicSwitcher) {
     clinicSwitcher.addEventListener('change', function(e) {
         var radios = this.querySelectorAll("input[type='radio']");
-        radios.forEach(function(radio) {
+        [].forEach.call(radios, function(radio) {
             var currentMap = document.querySelector("[data-map=" + radio.id + "]");
             currentMap.style.display = radio.checked ?  "block" : "none"
         });
