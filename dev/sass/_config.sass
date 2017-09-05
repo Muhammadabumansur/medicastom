@@ -18,6 +18,40 @@ input[type="text"], textarea
     &:focus
         background-color: #f5f5f5
 
+input[type="checkbox"]
+    display: none
+    & + label
+        padding-left: 30px
+        position: relative
+        &:before
+            content: ''
+            display: block
+            width: 20px
+            height: 20px
+            position: absolute
+            left: 0
+            top: 0
+            background-color: #fff
+            transition: background-color 0.2s
+        &:after
+            content: ''
+            display: block
+            width: 20px
+            height: 20px
+            position: absolute
+            left: 0
+            top: 0
+            background-image: url(../img/check.png)
+            background-repeat: no-repeat
+            background-position: center
+            opacity: 0
+            transition: opacity 0.2s
+    &:checked + label
+        &:before
+            background-color: #f9c556
+        &:after
+            opacity: 1
+
 .container
     max-width: 1200px
     width: auto

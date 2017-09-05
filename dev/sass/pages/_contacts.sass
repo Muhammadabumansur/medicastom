@@ -213,6 +213,12 @@
     border: 1px solid #ddd
     padding: 17px
 
+.feedback-form form input[type="checkbox"] + label:before
+    border: 1px solid #ddd
+
+.feedback-form form input[type="checkbox"]:checked + label:before
+    border: none
+
 @media (max-width: 790px)
  .mobile-column
     flex-direction: column

@@ -105,6 +105,41 @@ input[type="text"], textarea {
   input[type="text"]:focus, textarea:focus {
     background-color: #f5f5f5; }
 
+input[type="checkbox"] {
+  display: none; }
+  input[type="checkbox"] + label {
+    padding-left: 30px;
+    position: relative; }
+    input[type="checkbox"] + label:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      -webkit-transition: background-color 0.2s;
+      transition: background-color 0.2s; }
+    input[type="checkbox"] + label:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url(../img/check.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+  input[type="checkbox"]:checked + label:before {
+    background-color: #f9c556; }
+  input[type="checkbox"]:checked + label:after {
+    opacity: 1; }
+
 .container {
   max-width: 1200px;
   width: auto;
@@ -2546,6 +2581,12 @@ input[type="text"], textarea {
   border: 1px solid #ddd;
   padding: 17px; }
 
+.feedback-form form input[type="checkbox"] + label:before {
+  border: 1px solid #ddd; }
+
+.feedback-form form input[type="checkbox"]:checked + label:before {
+  border: none; }
+
 @media (max-width: 790px) {
   .mobile-column {
     -webkit-box-orient: vertical;
@@ -3549,7 +3590,9 @@ input[type="text"], textarea {
   border: 10px solid #fff;
   border-radius: 50%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 148px;
+  width: 148px; }
 
 .articles-list-block {
   width: 100%;
