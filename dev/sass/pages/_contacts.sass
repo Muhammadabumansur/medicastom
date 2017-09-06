@@ -128,6 +128,9 @@
     font-size: 30px
     text-transform: uppercase
     color: #fff
+    & a
+        color: #fff
+        text-decoration: none
 
 .navigation-info
     padding-top: 15px
@@ -260,7 +263,6 @@
     .requisites
         width: 100%
 
-
 .requisites .caption
     color: rgba(17, 17, 17, 0.4)
 
@@ -290,6 +292,10 @@
     margin-top: 0
     margin-bottom: 25px
 
+@media (max-width: 490px)
+    .photo-slider-header
+        flex-direction: column
+
 .photo-slider-header span
     font-family: 'bebas_neuebold'
     font-size: 22px
@@ -297,6 +303,11 @@
     text-transform: uppercase
     letter-spacing: 2px
     margin-right: 20px
+
+@media (max-width: 490px)
+    .photo-slider-header span
+        margin-right: 0
+        margin-bottom: 10px
 
 .photo-slider-header a
     display: inline-block

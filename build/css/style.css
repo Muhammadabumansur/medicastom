@@ -396,8 +396,11 @@ input[type="checkbox"] {
     display: none; } }
 
 .main-menu-list li.main-menu__list-item-submenu-opener {
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px; }
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
 
 .main-menu__link {
   display: -webkit-box;
@@ -469,7 +472,7 @@ input[type="checkbox"] {
   width: 86vw;
   max-width: 1200px;
   position: absolute;
-  top: 61px;
+  top: 50px;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -646,6 +649,10 @@ input[type="checkbox"] {
   transition: background-color 0.3s; }
   .slide-handler:hover, .slide-handler:focus {
     background-color: #fafafa; }
+
+@media (max-width: 490px) {
+  .slide-handler {
+    display: none; } }
 
 .offers {
   padding-top: 70px;
@@ -1882,7 +1889,7 @@ input[type="checkbox"] {
       align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 110px;
+  height: 112px;
   width: 23%;
   margin-right: 8%; }
   .footer-menu li:not(:nth-child(4n)) {
@@ -1954,16 +1961,21 @@ input[type="checkbox"] {
   color: #667290;
   font-size: 14px;
   margin-right: 127px; }
+  .copyright a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (max-width: 790px) {
   .copyright {
     width: 30%;
-    font-size: 12px; } }
+    font-size: 12px;
+    margin-right: 20px; } }
 
 @media (max-width: 490px) {
   .copyright {
     width: 100%;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+    margin-right: 0; } }
 
 .footer__personal {
   font-family: 'pt_sansitalic';
@@ -1996,7 +2008,8 @@ input[type="checkbox"] {
 @media (max-width: 490px) {
   .footer__social {
     padding-bottom: 20px;
-    padding-top: 10px; } }
+    padding-top: 10px;
+    margin: 0; } }
 
 .footer__social-link {
   -webkit-transition: -webkit-filter 0.3s;
@@ -2462,6 +2475,9 @@ input[type="checkbox"] {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff; }
+  .phone-text a {
+    color: #fff;
+    text-decoration: none; }
 
 .navigation-info {
   padding-top: 15px; }
@@ -2687,6 +2703,13 @@ input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 25px; }
 
+@media (max-width: 490px) {
+  .photo-slider-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .photo-slider-header span {
   font-family: 'bebas_neuebold';
   font-size: 22px;
@@ -2694,6 +2717,11 @@ input[type="checkbox"] {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 20px; }
+
+@media (max-width: 490px) {
+  .photo-slider-header span {
+    margin-right: 0;
+    margin-bottom: 10px; } }
 
 .photo-slider-header a {
   display: inline-block;
@@ -2798,7 +2826,14 @@ input[type="checkbox"] {
       flex-wrap: wrap; }
   .doctors-list > li {
     width: 33%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .doctors-list > li:not(:nth-child(3n)) {
       margin-right: 0.5%; }
 
@@ -2875,7 +2910,10 @@ input[type="checkbox"] {
 
 .doctors-details {
   padding: 25px 40px;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .doctors-name {
   font-family: 'bebas_neuebold';
@@ -3770,6 +3808,9 @@ input[type="checkbox"] {
 .services-main {
   padding-bottom: 60px; }
 
+.services-main .services__solution {
+  color: #2e437e; }
+
 .services-main .services__list {
   margin-bottom: 50px; }
 
@@ -3807,7 +3848,8 @@ input[type="checkbox"] {
   line-height: 1.36;
   color: #111;
   margin-top: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  letter-spacing: 0.05em; }
 
 .appointment-button-blue {
   background-color: #2e437e;
@@ -3986,6 +4028,7 @@ input[type="checkbox"] {
 
 .services-kinds-name a {
   font-family: 'bebas_neuebold';
+  font-weight: normal;
   font-size: 22px;
   line-height: 1.2;
   color: #2e437e;
