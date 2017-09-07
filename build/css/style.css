@@ -301,7 +301,7 @@ input[type="checkbox"] {
 
 @media (max-width: 1240px) {
   .short-contact__phone {
-    font-size: 25px; } }
+    font-size: 21px; } }
 
 .short-contact__metro {
   font-family: 'pt_sansregular';
@@ -353,7 +353,8 @@ input[type="checkbox"] {
 @media (max-width: 1240px) {
   .appointment-button {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px;
+    font-size: 13px; } }
 
 .main-menu {
   background-color: #f1f1f1;
@@ -508,7 +509,8 @@ input[type="checkbox"] {
 
 .mega-menu__service-header {
   margin-top: 0;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-transform: uppercase; }
 
 .mega-menu__service-header a {
   font-family: 'Oswald', sans-serif;
@@ -543,13 +545,14 @@ input[type="checkbox"] {
   border-top: 1px solid #f8fafc;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  text-transform: uppercase;
   color: #959292;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.1em; }
 
 @media (max-width: 940px) {
   .main-header {
-    font-size: 20px; } }
+    font-size: 18px; } }
 
 .main-slider-wrap {
   position: relative; }
@@ -593,6 +596,7 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 60px;
   line-height: 1;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 25px;
   color: #2e437e; }
@@ -720,19 +724,20 @@ input[type="checkbox"] {
 .offers__header {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 1;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 25px;
   color: #2e437e; }
 
 @media (max-width: 1240px) {
   .offers__header {
-    font-size: 50px; } }
+    font-size: 37px; } }
 
 @media (max-width: 940px) {
   .offers__header {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 15px; } }
 
 .offers__text {
@@ -814,7 +819,8 @@ input[type="checkbox"] {
     margin-bottom: 30px; } }
 
 .offer-deadline__pre-text {
-  font-size: 13px; }
+  font-size: 12px;
+  text-transform: uppercase; }
 
 .offer-deadline__time {
   font-size: 26px; }
@@ -826,15 +832,17 @@ input[type="checkbox"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px; }
+  font-size: 12px;
+  text-transform: uppercase; }
 
 .offer-name {
   padding-left: 20px;
   padding-right: 20px;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 1.25;
+  font-size: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
   color: #fff;
   text-decoration: underline;
   margin-bottom: 20px; }
@@ -850,7 +858,12 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 32px;
+  text-transform: uppercase;
   color: #fff; }
+
+@media (max-width: 790px) {
+  .offer-coast {
+    font-size: 27px; } }
 
 .services {
   background-color: #a8afb9;
@@ -922,6 +935,7 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 50px;
   line-height: 1;
+  text-transform: uppercase;
   color: #2e437e;
   margin-left: -35px;
   background-color: #f7f7f8; }
@@ -962,6 +976,7 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 13px;
+  text-transform: uppercase;
   margin-bottom: 10px; }
 
 .services__solution {
@@ -969,15 +984,20 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 26px;
   line-height: 1;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 15px; }
   .services__solution a {
     color: #2e437e;
     text-decoration: none; }
 
+@media (max-width: 1240px) {
+  .services__solution {
+    font-size: 20px; } }
+
 @media (max-width: 940px) {
   .services__solution {
-    font-size: 23px; } }
+    font-size: 19px; } }
 
 .services__details {
   margin: 0;
@@ -1074,7 +1094,8 @@ input[type="checkbox"] {
 
 .clock-round__right-block {
   padding-top: 10px;
-  width: 100px; }
+  width: 130px;
+  margin-right: 10px; }
 
 @media (max-width: 790px) {
   .clock-round__right-block {
@@ -1092,6 +1113,7 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
+  text-transform: uppercase;
   color: #fff;
   padding: 3px 8px;
   background-color: #6782cd; }
@@ -1215,6 +1237,7 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
+  text-transform: uppercase;
   color: #fff;
   padding: 5px 8px;
   background-color: #6782cd; }
@@ -1281,7 +1304,8 @@ input[type="checkbox"] {
 
 @media (max-width: 490px) {
   .advantages-slide__header {
-    bottom: 90px; } }
+    bottom: 90px;
+    font-size: 22px; } }
 
 .advantages-slide__text {
   position: absolute;
@@ -1374,6 +1398,7 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 48px;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 40px;
   color: #2e437e;
@@ -1467,6 +1492,7 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 22px;
+  text-transform: uppercase;
   color: #111;
   text-align: center; }
 
@@ -1857,8 +1883,8 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   color: #000011;
-  font-size: 36px;
-  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px; }
 
@@ -1915,7 +1941,8 @@ input[type="checkbox"] {
 @media (max-width: 940px) {
   .footer-menu {
     width: 27%;
-    margin-right: 5%; } }
+    margin-right: 5%;
+    height: 109px; } }
 
 @media (max-width: 790px) {
   .footer-menu {
@@ -2063,6 +2090,7 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 60px;
+  text-transform: uppercase;
   color: #2e437e;
   margin-top: 0;
   margin-bottom: 25px; }
@@ -2126,6 +2154,10 @@ input[type="checkbox"] {
     width: 100%;
     height: auto; }
 
+@media (max-width: 940px) {
+  .actions-img-block {
+    height: 170px; } }
+
 .action-days {
   position: absolute;
   top: 0;
@@ -2134,12 +2166,17 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 13px;
+  text-transform: uppercase;
   color: #383838;
   border: 1px solid #e8e8e8;
   background-color: #fff; }
 
 .actions-info {
   padding: 30px 45px; }
+
+@media (max-width: 940px) {
+  .actions-info {
+    padding: 20px 35px; } }
 
 @media (max-width: 490px) {
   .actions-info {
@@ -2160,6 +2197,10 @@ input[type="checkbox"] {
     .actions-name a:hover {
       text-decoration: underline; }
 
+@media (max-width: 940px) {
+  .actions-name {
+    font-size: 25px; } }
+
 @media (max-width: 490px) {
   .actions-name {
     font-size: 22px;
@@ -2174,6 +2215,10 @@ input[type="checkbox"] {
   color: #fff;
   padding: 5px 10px;
   background-color: #6782cd; }
+
+@media (max-width: 940px) {
+  .action-coast {
+    font-size: 15px; } }
 
 @media (max-width: 790px) {
   .action-coast {
@@ -2279,7 +2324,12 @@ input[type="checkbox"] {
   color: #111;
   font-size: 24px;
   line-height: 26px;
-  letter-spacing: 2px; }
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+@media (max-width: 1240px) {
+  .clinic-switcher input[type="radio"] + label {
+    font-size: 20px; } }
 
 .clinic-switcher input[type="radio"] + label:before {
   content: '';
@@ -2313,8 +2363,13 @@ input[type="checkbox"] {
   font-weight: 600;
   color: #000011;
   font-size: 31px;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px; }
+
+@media (max-width: 940px) {
+  .aside-header {
+    font-size: 25px; } }
 
 .news-block {
   padding: 25px 40px;
@@ -2325,6 +2380,7 @@ input[type="checkbox"] {
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px; }
     .news-block h4 a {
@@ -2332,6 +2388,13 @@ input[type="checkbox"] {
       text-decoration: none; }
       .news-block h4 a:hover, .news-block h4 a:focus {
         text-decoration: underline; }
+
+@media (max-width: 940px) {
+  .news-block {
+    padding: 15px 30px; }
+    .news-block h4 {
+      font-size: 18px;
+      line-height: 22px; } }
 
 .news-block .date {
   display: inline-block;
@@ -2403,7 +2466,8 @@ input[type="checkbox"] {
   color: #111;
   font-size: 24px;
   line-height: 26px;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-right: 20px;
   vertical-align: middle; }
 
@@ -2681,6 +2745,7 @@ input[type="checkbox"] {
   vertical-align: middle; }
 
 .accept label {
+  display: block;
   font-family: 'pt_sansitalic';
   color: #5a5f6f;
   font-size: 16px;
@@ -2795,6 +2860,10 @@ input[type="checkbox"] {
     letter-spacing: 1px;
     margin-right: 30px; }
 
+@media (max-width: 940px) {
+  .doctors-clinic-switcher span {
+    margin-right: 15px; } }
+
 @media (max-width: 790px) {
   .doctors-clinic-switcher {
     -webkit-box-orient: vertical;
@@ -2817,17 +2886,20 @@ input[type="checkbox"] {
   color: #111;
   font-size: 24px;
   line-height: 26px;
+  text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 20px;
   vertical-align: middle; }
 
 @media (max-width: 1240px) {
   .doctors-clinic-switcher input[type="radio"] + label {
-    font-size: 22px; } }
+    font-size: 17px; } }
 
 @media (max-width: 940px) {
   .doctors-clinic-switcher input[type="radio"] + label {
-    font-size: 14px; } }
+    font-size: 13px;
+    padding-left: 30px;
+    margin-right: 15px; } }
 
 .doctors-clinic-switcher input[type="radio"] + label:before {
   content: '';
@@ -3017,7 +3089,8 @@ input[type="checkbox"] {
   font-weight: 600;
   color: #111;
   font-size: 36px;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 33px;
@@ -3101,6 +3174,10 @@ input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 20px; }
 
+@media (max-width: 490px) {
+  .about-us-header {
+    font-size: 43px; } }
+
 .about-us-text {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -3166,6 +3243,11 @@ input[type="checkbox"] {
   padding: 95px 40px 25px;
   text-align: center; }
 
+@media (max-width: 1240px) {
+  .clinic-photo-info-block {
+    padding-right: 30px;
+    padding-left: 30px; } }
+
 .clinic-photo-header {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
@@ -3175,6 +3257,10 @@ input[type="checkbox"] {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 15px; }
+
+@media (max-width: 1240px) {
+  .clinic-photo-header {
+    font-size: 20px; } }
 
 .clinic-photo-address {
   font-family: 'pt_sansitalic';
@@ -3552,7 +3638,7 @@ input[type="checkbox"] {
   .credit-conditions > div {
     width: 43%; }
 
-@media (max-width: 940px) {
+@media (max-width: 1240px) {
   .credit-conditions {
     -ms-flex-pack: distribute;
         justify-content: space-around; } }
@@ -3574,6 +3660,10 @@ input[type="checkbox"] {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px; }
+
+@media (max-width: 1240px) {
+  .credit-conditions h2 {
+    font-size: 20px; } }
 
 .credit-conditions ul {
   margin: 0;
@@ -3681,14 +3771,19 @@ input[type="checkbox"] {
   text-align: center;
   margin-top: -80px; }
 
-.article-header {
+.articles-header {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   color: #111;
   font-size: 30px;
+  line-height: 1.2;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 35px; }
+
+@media (max-width: 490px) {
+  .articles-header {
+    font-size: 24px; } }
 
 .article-text {
   width: 100%;
@@ -3726,6 +3821,10 @@ input[type="checkbox"] {
 .article-main-info {
   width: 72%; }
 
+@media (max-width: 1240px) {
+  .article-main-info {
+    width: 62%; } }
+
 @media (max-width: 790px) {
   .article-main-info {
     width: 100%; } }
@@ -3748,7 +3847,8 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 31px;
-  line-height: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
   color: #001;
   margin-top: 0;
   margin-bottom: 25px; }
@@ -3774,6 +3874,10 @@ input[type="checkbox"] {
 
 .article-side-info {
   width: 24%; }
+
+@media (max-width: 1240px) {
+  .article-side-info {
+    width: 34%; } }
 
 @media (max-width: 790px) {
   .article-side-info {
@@ -3806,6 +3910,7 @@ input[type="checkbox"] {
 .other-article-img-wrap {
   width: 95px;
   height: 95px;
+  min-width: 95px;
   border: 10px solid #fff;
   border-radius: 50%;
   overflow: hidden;
@@ -3834,6 +3939,10 @@ input[type="checkbox"] {
 @media (max-width: 1240px) {
   .other-article p {
     width: 100%; } }
+
+@media (max-width: 940px) {
+  .other-article p {
+    font-size: 14px; } }
 
 .look-all {
   font-family: 'pt_sansregular';
@@ -3884,19 +3993,29 @@ input[type="checkbox"] {
   font-weight: 600;
   font-size: 41px;
   line-height: 1.2;
+  text-transform: uppercase;
   color: #2e437e;
   margin-top: 0;
   margin-bottom: 15px; }
+
+@media (max-width: 1240px) {
+  .services__list-item_last h3 {
+    font-size: 30px; } }
 
 .services__list-item_last h4 {
   font-family: 'Oswald',sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.36;
+  text-transform: uppercase;
   color: #111;
   margin-top: 0;
   margin-bottom: 30px;
   letter-spacing: 0.05em; }
+
+@media (max-width: 1240px) {
+  .services__list-item_last h4 {
+    font-size: 20px; } }
 
 .appointment-button-blue {
   background-color: #2e437e;
@@ -3991,7 +4110,8 @@ input[type="checkbox"] {
   text-align: right;
   font-family: 'Oswald',sans-serif;
   font-weight: 600;
-  font-size: 20px; }
+  font-size: 20px;
+  text-transform: uppercase; }
 
 .services-price td:last-child.free {
   color: #2e437e; }
@@ -4076,6 +4196,10 @@ input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 0; }
 
+@media (max-width: 790px) {
+  .services-kinds-name {
+    width: 70%; } }
+
 .services-kinds-name a {
   font-family: 'Oswald',sans-serif;
   font-weight: 600;
@@ -4090,6 +4214,10 @@ input[type="checkbox"] {
     color: #4666bf; }
 
 @media (max-width: 1240px) {
+  .services-kinds-name a {
+    font-size: 15px; } }
+
+@media (max-width: 940px) {
   .services-kinds-name a {
     font-size: 19px; } }
 

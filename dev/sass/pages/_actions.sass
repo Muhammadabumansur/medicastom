@@ -22,6 +22,7 @@
     font-family: 'Oswald', sans-serif
     font-weight: 600
     font-size: 60px
+    text-transform: uppercase
     color: $main-color
     margin-top: 0
     margin-bottom: 25px
@@ -73,6 +74,10 @@
         width: 100%
         height: auto
 
+@media (max-width: 940px)
+    .actions-img-block
+        height: 170px
+
 .action-days
     position: absolute
     top: 0
@@ -81,12 +86,17 @@
     font-family: 'Oswald', sans-serif
     font-weight: 400
     font-size: 13px
+    text-transform: uppercase
     color: #383838
     border: 1px solid #e8e8e8
     background-color: #fff
 
 .actions-info
     padding: 30px 45px
+
+@media (max-width: 940px)
+    .actions-info
+        padding: 20px 35px
 
 @media (max-width: 490px)
     .actions-info
@@ -107,6 +117,10 @@
         &:hover
             text-decoration: underline
 
+@media (max-width: 940px)
+    .actions-name
+        font-size: 25px
+
 @media (max-width: 490px)
     .actions-name
         font-size: 22px
@@ -121,6 +135,10 @@
     color: #fff
     padding: 5px 10px
     background-color: #6782cd
+
+@media (max-width: 940px)
+    .action-coast
+        font-size: 15px
 
 @media (max-width: 790px)
     .action-coast
@@ -219,7 +237,12 @@
     color: #111
     font-size: 24px
     line-height: 26px
-    letter-spacing: 2px
+    text-transform: uppercase
+    letter-spacing: 1px
+
+@media (max-width: 1240px)
+    .clinic-switcher input[type="radio"] + label
+        font-size: 20px
 
 .clinic-switcher input[type="radio"] + label:before
     content: ''
@@ -252,8 +275,13 @@
     font-weight: 600
     color: #000011
     font-size: 31px
+    text-transform: uppercase
     margin-top: 0
     margin-bottom: 30px
+
+@media (max-width: 940px)
+    .aside-header
+        font-size: 25px  
 
 .news-block
     padding: 25px 40px
@@ -264,6 +292,7 @@
         font-weight: 600
         font-size: 22px
         line-height: 26px
+        text-transform: uppercase
         margin-top: 0
         margin-bottom: 10px
         & a
@@ -272,6 +301,12 @@
             &:hover, &:focus
                 text-decoration: underline
 
+@media (max-width: 940px)
+    .news-block
+        padding: 15px 30px
+        & h4
+            font-size: 18px
+            line-height: 22px
 
 .news-block .date
     display: inline-block
