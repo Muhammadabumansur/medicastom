@@ -1,10 +1,16 @@
 html
     box-sizing: border-box
+    font-weight: normal
     padding: 0
     width: 100%
     overflow-x: hidden
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
     & *, & *:before, & *:after
         box-sizing: inherit
+
+h1, h2, h3, h4, h5, h6
+    font-weight: inherit
 
 body
     padding: 0
@@ -12,6 +18,7 @@ body
     min-height: 100vh
     display: flex
     flex-direction: column
+    line-height: 1.15
 
 input[type="text"], textarea
     transition: background-color 0.3s

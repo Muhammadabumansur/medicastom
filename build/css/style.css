@@ -36,20 +36,8 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'bebas_neuelight';
-  src: url("../fonts/bebasneue_light-webfont.woff2") format("woff2"), url("../fonts/bebasneue_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'bebas_neueregular';
   src: url("../fonts/bebasneue_regular-webfont.woff2") format("woff2"), url("../fonts/bebasneue_regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'bebas_neuethin';
-  src: url("../fonts/bebasneue_thin-webfont.woff2") format("woff2"), url("../fonts/bebasneue_thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -80,12 +68,18 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: normal;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
   html *, html *:before, html *:after {
     -webkit-box-sizing: inherit;
             box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit; }
 
 body {
   padding: 0;
@@ -97,7 +91,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  line-height: 1.15; }
 
 input[type="text"], textarea {
   -webkit-transition: background-color 0.3s;
@@ -292,8 +287,9 @@ input[type="checkbox"] {
     margin-right: 0; } }
 
 .short-contact__phone {
-  font-family: 'bebas_neuebold';
-  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
   line-height: 1;
   color: #fff;
   text-decoration: none;
@@ -515,7 +511,8 @@ input[type="checkbox"] {
   margin-bottom: 15px; }
 
 .mega-menu__service-header a {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #2e437e;
   text-decoration: none; }
@@ -544,7 +541,8 @@ input[type="checkbox"] {
   padding-bottom: 20px;
   text-align: center;
   border-top: 1px solid #f8fafc;
-  font-family: 'bebas_neuebook';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   color: #959292;
   font-size: 24px;
   letter-spacing: 0.1em; }
@@ -591,7 +589,8 @@ input[type="checkbox"] {
     width: 50%; } }
 
 .slide-info__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 60px;
   line-height: 1;
   margin-top: 0;
@@ -719,8 +718,9 @@ input[type="checkbox"] {
   background-color: #14234d; }
 
 .offers__header {
-  font-family: 'bebas_neuebold';
-  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 55px;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 25px;
@@ -805,18 +805,19 @@ input[type="checkbox"] {
   background-color: #fff;
   padding: 10px;
   color: #2e437e;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   margin-bottom: 45px; }
 
 @media (max-width: 790px) {
-  .offer-name {
+  .offer-deadline {
     margin-bottom: 30px; } }
 
 .offer-deadline__pre-text {
   font-size: 13px; }
 
 .offer-deadline__time {
-  font-size: 36px; }
+  font-size: 26px; }
 
 .offer-deadline__post-text {
   display: -webkit-box;
@@ -830,8 +831,9 @@ input[type="checkbox"] {
 .offer-name {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: 'bebas_neuebold';
-  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 1.25;
   color: #fff;
   text-decoration: underline;
@@ -839,14 +841,15 @@ input[type="checkbox"] {
 
 @media (max-width: 940px) {
   .offer-name {
-    font-size: 20px; } }
+    font-size: 18px; } }
 
 .offer-coast {
   position: absolute;
   left: 20px;
   bottom: 25px;
-  font-family: 'bebas_neuebold';
-  font-size: 36px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
   color: #fff; }
 
 .services {
@@ -915,8 +918,9 @@ input[type="checkbox"] {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'bebas_neuebold';
-  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
   line-height: 1;
   color: #2e437e;
   margin-left: -35px;
@@ -924,11 +928,11 @@ input[type="checkbox"] {
 
 @media (max-width: 1240px) {
   .services__header {
-    font-size: 50px; } }
+    font-size: 40px; } }
 
 @media (max-width: 940px) {
   .services__header {
-    font-size: 40px; } }
+    font-size: 30px; } }
 
 .services__promo-text {
   margin: 0;
@@ -955,12 +959,14 @@ input[type="checkbox"] {
   background-color: #6782cd;
   padding: 7px 10px;
   color: #fff;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   margin-bottom: 10px; }
 
 .services__solution {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 26px;
   line-height: 1;
   margin-top: 0;
@@ -1054,7 +1060,8 @@ input[type="checkbox"] {
             flex-direction: column; } }
 
 .clock-round__hours-number {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 135px;
   color: #fff;
   margin-right: 15px; }
@@ -1081,7 +1088,8 @@ input[type="checkbox"] {
 
 .clock-round__promo-text {
   display: inline-block;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1;
   color: #fff;
@@ -1170,7 +1178,8 @@ input[type="checkbox"] {
     margin-left: -10px; } }
 
 .advantages__number {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 200px;
   line-height: 1;
   color: #2e437e;
@@ -1202,7 +1211,8 @@ input[type="checkbox"] {
 
 .advantages__promo-text {
   display: inline-block;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1;
   color: #fff;
@@ -1259,7 +1269,8 @@ input[type="checkbox"] {
   width: 100%;
   text-align: center;
   margin: 0;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 40px;
   color: #fff; }
 
@@ -1360,7 +1371,8 @@ input[type="checkbox"] {
     top: -25px; } }
 
 .feedback__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 48px;
   margin-top: 0;
   margin-bottom: 40px;
@@ -1431,7 +1443,8 @@ input[type="checkbox"] {
   margin-top: auto; }
 
 .feedback__date {
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   color: #2e437e;
   font-size: 14px;
   opacity: 0.5;
@@ -1451,7 +1464,8 @@ input[type="checkbox"] {
     background-color: transparent; }
 
 .feedback__sub-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 22px;
   color: #111;
   text-align: center; }
@@ -1528,7 +1542,8 @@ input[type="checkbox"] {
     line-height: 38px; } }
 
 .promo-header__additional-text {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 22px;
   color: #111;
   text-transform: uppercase; }
@@ -1576,7 +1591,8 @@ input[type="checkbox"] {
     font-size: 15px; } }
 
 .doctor-name {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   color: #111;
   text-transform: uppercase;
@@ -1838,7 +1854,8 @@ input[type="checkbox"] {
     padding-bottom: 20px; } }
 
 .promo-text__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #000011;
   font-size: 36px;
   text-align: center;
@@ -2043,7 +2060,8 @@ input[type="checkbox"] {
   color: inherit; }
 
 .common-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 60px;
   color: #2e437e;
   margin-top: 0;
@@ -2113,7 +2131,8 @@ input[type="checkbox"] {
   top: 0;
   left: 40px;
   padding: 5px 10px;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   color: #383838;
   border: 1px solid #e8e8e8;
@@ -2129,7 +2148,8 @@ input[type="checkbox"] {
 .actions-name {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #000011;
   font-size: 30px;
   line-height: 1.2;
@@ -2147,7 +2167,8 @@ input[type="checkbox"] {
 
 .action-coast {
   display: inline-block;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
@@ -2184,7 +2205,8 @@ input[type="checkbox"] {
 
 .page-numbers a {
   display: block;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #2e437e;
   font-size: 20px;
   height: 42px;
@@ -2252,7 +2274,8 @@ input[type="checkbox"] {
   display: block;
   position: relative;
   padding-left: 35px;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   color: #111;
   font-size: 24px;
   line-height: 26px;
@@ -2286,7 +2309,8 @@ input[type="checkbox"] {
     padding-right: 10px; } }
 
 .aside-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #000011;
   font-size: 31px;
   margin-top: 0;
@@ -2297,7 +2321,8 @@ input[type="checkbox"] {
   background-color: #f4f4f4;
   margin-bottom: 10px; }
   .news-block h4 {
-    font-family: 'bebas_neuebold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
     font-size: 22px;
     line-height: 26px;
     margin-top: 0;
@@ -2310,7 +2335,8 @@ input[type="checkbox"] {
 
 .news-block .date {
   display: inline-block;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
   color: #fff;
   padding: 5px 10px;
@@ -2372,7 +2398,8 @@ input[type="checkbox"] {
   display: inline-block;
   position: relative;
   padding-left: 35px;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   color: #111;
   font-size: 24px;
   line-height: 26px;
@@ -2471,7 +2498,8 @@ input[type="checkbox"] {
     padding-bottom: 10px; } }
 
 .phone-text {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 30px;
   text-transform: uppercase;
   color: #fff; }
@@ -2536,7 +2564,8 @@ input[type="checkbox"] {
     padding: 35px 30px; } }
 
 .feedback-form__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 48px;
   color: #2e437e;
   text-transform: uppercase;
@@ -2672,7 +2701,8 @@ input[type="checkbox"] {
   color: rgba(17, 17, 17, 0.4); }
 
 .requisites__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #111;
   font-size: 26px;
   text-transform: uppercase;
@@ -2711,7 +2741,8 @@ input[type="checkbox"] {
             flex-direction: column; } }
 
 .photo-slider-header span {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 22px;
   color: #111;
   text-transform: uppercase;
@@ -2781,7 +2812,8 @@ input[type="checkbox"] {
   display: inline-block;
   position: relative;
   padding-left: 35px;
-  font-family: 'bebas_neueregular';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   color: #111;
   font-size: 24px;
   line-height: 26px;
@@ -2916,7 +2948,8 @@ input[type="checkbox"] {
           flex: 1; }
 
 .doctors-name {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 24px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -2980,7 +3013,8 @@ input[type="checkbox"] {
     width: 100%; } }
 
 .doctor-biography__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #111;
   font-size: 36px;
   letter-spacing: 2px;
@@ -3002,7 +3036,8 @@ input[type="checkbox"] {
   margin-bottom: 60px; }
 
 .doctor-biography__year {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 30px;
   color: #2e437e;
   min-width: 70px; }
@@ -3058,7 +3093,8 @@ input[type="checkbox"] {
     width: 100%; } }
 
 .about-us-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #000011;
   font-size: 48px;
   text-transform: uppercase;
@@ -3131,7 +3167,8 @@ input[type="checkbox"] {
   text-align: center; }
 
 .clinic-photo-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 26px;
   line-height: 1;
   color: #fff;
@@ -3212,7 +3249,8 @@ input[type="checkbox"] {
     width: 90%; } }
 
 .principes-list h3 {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #2e437e;
   font-size: 26px;
   line-height: 1;
@@ -3294,7 +3332,8 @@ input[type="checkbox"] {
   padding-bottom: 50px; }
 
 .feedback-main__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #000;
   font-size: 20px;
   line-height: 1.3;
@@ -3419,7 +3458,8 @@ input[type="checkbox"] {
     padding: 30px; } }
 
 .credit-promo-slogan {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 30px;
   line-height: 1.2;
   color: #fff;
@@ -3478,7 +3518,8 @@ input[type="checkbox"] {
   margin-bottom: 30px; }
 
 .credit-features__header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #001;
   font-size: 31px;
   text-transform: uppercase;
@@ -3526,7 +3567,8 @@ input[type="checkbox"] {
       width: 100%; } }
 
 .credit-conditions h2 {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #001;
   font-size: 31px;
   text-transform: uppercase;
@@ -3640,7 +3682,8 @@ input[type="checkbox"] {
   margin-top: -80px; }
 
 .article-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   color: #111;
   font-size: 30px;
   text-transform: uppercase;
@@ -3702,7 +3745,8 @@ input[type="checkbox"] {
   margin-bottom: 60px; }
 
 .article-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
   font-size: 31px;
   line-height: 1;
   color: #001;
@@ -3777,8 +3821,9 @@ input[type="checkbox"] {
           align-items: center; }
 
 .other-article p {
-  font-family: 'bebas_neuebold';
-  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
   line-height: 1.2;
   color: #111;
   text-transform: uppercase;
@@ -3835,7 +3880,8 @@ input[type="checkbox"] {
   padding: 50px 40px; }
 
 .services__list-item_last h3 {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 41px;
   line-height: 1.2;
   color: #2e437e;
@@ -3843,7 +3889,8 @@ input[type="checkbox"] {
   margin-bottom: 15px; }
 
 .services__list-item_last h4 {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.36;
   color: #111;
@@ -3865,7 +3912,8 @@ input[type="checkbox"] {
             box-shadow: 0 3px 0 0 #2857d4; }
 
 .services-promo-header {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   color: #001;
   font-size: 36px;
   text-transform: uppercase;
@@ -3919,7 +3967,8 @@ input[type="checkbox"] {
   text-align: left;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #2e437e;
   text-transform: uppercase; }
@@ -3940,7 +3989,8 @@ input[type="checkbox"] {
 
 .services-price td:last-child {
   text-align: right;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 20px; }
 
 .services-price td:last-child.free {
@@ -4027,7 +4077,8 @@ input[type="checkbox"] {
   margin-bottom: 0; }
 
 .services-kinds-name a {
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-weight: normal;
   font-size: 22px;
   line-height: 1.2;
@@ -4073,7 +4124,8 @@ input[type="checkbox"] {
 .service-category-details-main {
   width: 72%; }
   .service-category-details-main h2 {
-    font-family: 'bebas_neuebold';
+    font-family: 'Oswald',sans-serif;
+    font-weight: 600;
     color: #001;
     font-size: 31px;
     text-transform: uppercase;
@@ -4236,7 +4288,8 @@ input[type="checkbox"] {
 
 .services-price h2 button {
   overflow: visible;
-  font-family: 'bebas_neuebold';
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #2e437e;
   text-transform: uppercase;
@@ -4252,7 +4305,7 @@ input[type="checkbox"] {
     height: 8px;
     position: absolute;
     right: -15px;
-    top: 10px;
+    top: 16px;
     background-image: url(../img/accordion-arrow.png);
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
